@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+
+<body>
+    <!--Inicio Header -->
+    <header>
+        <nav>
+            <picture>
+                <a href="./index.html">
+                    <img src="./multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca funkoshop">
+                </a>
+            </picture>
+            <ul>
+                <li>
+                    <a href="shop.html">VER TIENDA</a>
+                </li>
+                <li>
+                    <a href="admin.html">ADMIN</a>
+                </li>
+                <li><a href="index.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!--Fin Header-->
+    <main>
+        <h2>EDITAR ITEM</h2>
+        <form action="">
+            <label for="categoria">Categoría:</label>
+            <select name="categoria" id="categ_item">
+                <option value="0">Figuras</option>
+                <option value="1">STAR WARS</option>
+                <option value="2">POKEMON</option>
+                <option value="3">HARRY POTTER</option>
+            </select>
+            <label for="licencia">Licencia:</label>
+            <select name="licencia" id="lic_item">
+                <option value="0">Licencia</option>
+            </select>
+            <label for="nom_prod">Nombre del Producto:</label>
+            <input type="text" name="nom_prod">
+            <textarea name="descripcion" id="descripcion" cols="70" rows="8"></textarea>
+            <div>
+                <label for="sku">SKU:</label><input type="text" id="sku">
+                <label for="Precio">Precio:</label><input type="text" id="precio">
+                <label for="stock">Stock:</label><input type="text" id="stock">
+                <label for="descuento">Descuento:</label><input type="text" id="desc">
+                <select name="cuotas" id="cuotas">
+                    <option value="cuo_1">3 cuotas sin intereses</option>
+                    <option value="cuo_2">6 cuotas sin intereses</option>
+                    <option value="cuo_3">9 cuotas sin intereses</option>
+                    <option value="cuo_4">12 cuotas sin intereses</option>
+                </select>
+            </div>
+            <label for="archivos">Imágenes:</label>
+            <input type="file">
+            <button class="btn_modif">Modificar producto</button>
+        </form>
+    </main>
+    <!-- Footer -->  
+    <footer class="fondo-footer">
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="register.html">Registrarse</a></li>
+            <li><a href="#">Ingresar</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div>All rights reserved 2023 - Funkoshop &copy ;</div>
+        <div>
+            <img src="multimedia/branding/logo_light_horizontal.svg" alt="Logo del sitio" />
+        </div>
+    </footer>
+</body>
+
+</html>

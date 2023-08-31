@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FunkoShop</title>
-    </head>
-    <body>
-        <!--Inicio Header -->
-        <header>
-            <nav>
-                <picture>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FunkoShop</title>
+</head>
+
+<body>
+    <!--Inicio Header -->
+    <header>
+        <nav>
+            <picture>
                 <a href="./index.html">
                     <img src="./multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca funkoshop">
                 </a>
-                </picture>
-                <ul>
-                    <li>
-                        <a href="./pages/shop.html">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="./pages/contact.html">CONTACTO</a>
-                    </li>
-                    <li><a href="./pages/login.html">LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="./pages/cart.html">
+            </picture>
+            <ul>
+                <li>
+                    <a href="shop.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="#">CONTACTO</a>
+                </li>
+                <li><a href="#">LOGIN</a>
+                </li>
+                <li>
+                    <a href="carrito_compras.html">
                         <img src="./multimedia/icons/cart-icon.svg" alt="ícono de carrito">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header> <!--Fin Header-->
-        <!-- Banner -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!--Fin Header-->
+    <!-- Banner -->
+    <main>
         <section class="banner">
             <p class="banner__title">Nuevos ingresos</p>
-             <p class="banner__subtitle">Descubrí el próximo Finko Pop de tu colección</p>
+            <p class="banner__subtitle">Descubrí el próximo Finko Pop de tu colección</p>
             <button class="banner__btn">Shop</button>
         </section>
         <!-- Card Pokemon -->
         <section>
             <h3>POKEMON INDIGO</h3>
-                <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                <img src="../multimedia/pokemon/vulpix-1.webp" alt="POKEMON VULPIX">
+            <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+            <img src="../multimedia/pokemon/vulpix-1.webp" alt="POKEMON VULPIX">
             <a href="#">VER COLECCION</a>
+        </section>
+        <!-- Card Harry-Potter -->
+        <section>
+            <h3>HARRY POTTER</h3>
+            <p>Revive los recuerdos de una saga llena de magia y encantos.</p>
+            <img src="../multimedia/harry-potter/snape-patronus-1.webp"
+                alt="Figura coleccionable Funko del Patronus de Snape en la pelicula de Harry Potter">
+            <a href="./shop.html">VER COLECCION</a>
         </section>
         <!-- Card Últimos Lanzamientos -->
         <section class="ult-lanz">
@@ -58,7 +69,7 @@
             <div>
                 <div class="nuevo">NUEVO</div>
                 <img src="multimedia/pokemon/pidgeotto-1.webp" alt="Pidgeotto" width="300px">
-                <h6>POKEMON</h6>       
+                <h6>POKEMON</h6>
                 <h4>PIDGEOTTO</h4>
                 <p>$ 1.799,99</p>
                 <p>3 CUOTAS SIN INTERES</p>
@@ -66,23 +77,25 @@
             <div>
                 <div class="nuevo">NUEVO</div>
                 <img src="multimedia/harry-potter/luna-1.webp" alt="Luna Lovegood" width="300px">
-                <h6>HARRY POTTER</h6>       
+                <h6>HARRY POTTER</h6>
                 <h4>LUNA LOVEGOOD LION MASK</h4>
                 <p>$ 1.799,99</p>
                 <p>3 CUOTAS SIN INTERES</p>
             </div>
         </section>
-        <!-- Footer -->
-        <footer class="fondo-footer" >
-            <nav>
-                <a href="shop.html">Shop</a>
-                <a href="#">Ingresar</a>
-                <a href="#">Contacto</a>
-            </nav>
-            <div>All rights reserved 2023 - Funkoshop &copy ;</div>
-            <div>
-                <img src="multimedia/branding/logo_light_horizontal.svg" alt="Logo del sitio" />
-            </div>
-        </footer>
-    </body>
+    </main>
+    <!-- Footer -->
+    <footer class="fondo-footer">
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">Ingresar</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div>All rights reserved 2023 - Funkoshop &copy ;</div>
+        <div>
+            <img src="multimedia/branding/logo_light_horizontal.svg" alt="Logo del sitio" />
+        </div>
+    </footer>
+</body>
+
 </html>
