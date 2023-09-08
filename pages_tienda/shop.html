@@ -1,11 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
 </head>
+
 <body>
-    
+    <!--Inicio Header -->
+    <header>
+        <nav>
+            <picture>
+                <a href="../index.html">
+                    <img src="../multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca funkoshop">
+                </a>
+            </picture>
+            <ul>
+                <li>
+                    <a href="#">SHOP</a>
+                </li>
+                <li>
+                    <a href="#">CONTACTO</a>
+                </li>
+                <li><a href="../pages_admin/login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="../pages_tienda/carrito_compras.html">
+                        <img src="../multimedia/icons/cart-icon.svg" alt="ícono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+</header> <!--Fin Header-->
+   
+   <!--inicio aside --> 
+<aside> 
+        <form action="" method="post" enctype="application/x-www-form-urlencoded" >
+     <div>
+        <label for="busqueda"> BUSCAR </label>
+        <input type="text" name="busqueda" id="busqueda" placeholder="item o categoría" />
+     </div> 
+     <div>
+     <label> ORDENAR POR</label>
+     </div>
+    <div>
+        <select name="orden" id="orden">
+        <option value="mayor"> mayor a menor</option> 
+        <option value="menor"> menor a mayor</option>   
+        </select>
+    </div>   
+    <div>
+        <label> PRECIO </label>
+     </div>
+     <div>
+        <label for="min" >MIN</label> 
+        <input type="number" name="min" id="min" placeholder="0" />
+        <label for="max" >MAX</label>
+        <input type="number" name="max" id="max" placeholder="0" />
+    </div>
+    <div>
+        <label> FILTRAR </label>
+    </div>
+    <div>
+        <input type="checkbox" name="nuevos" id="nuevos" value="1"/>
+        <label for="nuevos">NUEVOS</label>
+    </div>
+    <div>
+        <input type="checkbox" name="ofertas" id="ofertas" value="2"/>
+        <label for="ofertas">OFERTAS</label>
+    </div> 
+    <div>
+        <input type="checkbox" name="edicion especial" id="edicion especial" value="3"/>
+        <label for="edicion especial">EDICIÓN ESPECIAL</label>
+    </div>
+    <div>
+        <input type="checkbox" name="favoritos" id="favoritos" value="4" />
+        <label for="favoritos">FAVORITOS</label> 
+    </div>
+        </form>
+
+</aside>
+<!--fin aside-->
+<!--inicio main-->
+<main>
+    <section class="pagina 1">
+           <article class="star wars" >
+           <div class="NUEVO">NUEVO</div>
+           <img src="../multimedia/star-wars/trooper-1.webp" alt="Stormtrooper" >
+           <h6> STAR WARS</h6>
+           <h3>STORMTROOPER LIGHTSABER</h3>
+           <p>$ 1.799,99</p>
+           <p>3 CUOTAS SIN INTERES</p>
+           </article>
+
+           <article class="pokemon" >
+            <div class="NUEVO">NUEVO</div>
+            <img src="../multimedia/pokemon/pidgeotto-1.webp" alt="Pidgeotto" >
+            <h6> POKEMON</h6>
+            <h3>PIDGEOTTO</h3>
+            <p>$ 1.799,99</p>
+            <p>3 CUOTAS SIN INTERES</p>
+            </article>  
+            
+            <article class="Harry potter" >
+            <div class="NUEVO">NUEVO</div>
+            <img src="../multimedia/harry-potter/luna-1.webp" alt="Luna Lovegood" >
+            <h6>HARRY POTTER </h6>
+            <h3>LUNA LOVEGOOD LION MASK</h3>
+            <p>$ 1.799,99</p>
+            <p>3 CUOTAS SIN INTERES</p>
+            </article> 
+   
+            <article class="star wars" >
+            <div class="NUEVO">NUEVO</div>
+            <img src="../multimedia/star-wars/trooper-1.webp" alt="Stormtrooper" >
+            <h6> STAR WARS</h6>
+            <h3>STORMTROOPER LIGHTSABER</h3>
+            <p>$ 1.799,99</p>
+            <p>3 CUOTAS SIN INTERES</p>
+            </article>
+     
+            <article class="pokemon" >
+            <div class="NUEVO">NUEVO</div>
+            <img src="../multimedia/pokemon/pidgeotto-1.webp" alt="Pidgeotto" >
+            <h6> POKEMON</h6>
+            <h3>PIDGEOTTO</h3>
+            <p>$ 1.799,99</p>
+            <p>3 CUOTAS SIN INTERES</p>
+            </article>  
+                 
+            <article class="Harry potter" >
+            <div class="NUEVO">NUEVO</div>
+            <img src="../multimedia/harry-potter/luna-1.webp" alt="Luna Lovegood" >
+            <h6>HARRY POTTER </h6>
+            <h3>LUNA LOVEGOOD LION MASK</h3>
+            <p>$ 1.799,99</p>
+            <p>3 CUOTAS SIN INTERES</p>
+            </article> 
+
+            <article class="star wars" >
+            <div class="NUEVO">NUEVO</div>
+            <img src="../multimedia/star-wars/trooper-1.webp" alt="Stormtrooper" >
+            <h6> STAR WARS</h6>
+            <h3>STORMTROOPER LIGHTSABER</h3>
+            <p>$ 1.799,99</p>
+            <p>3 CUOTAS SIN INTERES</p>
+            </article>
+         
+            <article class="pokemon" >
+            <div class="NUEVO">NUEVO</div>
+            <img src="../multimedia/pokemon/pidgeotto-1.webp" alt="Pidgeotto" >
+            <h6> POKEMON</h6>
+            <h3>PIDGEOTTO</h3>
+            <p>$ 1.799,99</p>
+            <p>3 CUOTAS SIN INTERES</p>
+            </article>  
+                     
+            <article class="Harry potter" >
+            <div class="NUEVO">NUEVO</div>
+            <img src="../multimedia/harry-potter/luna-1.webp" alt="Luna Lovegood" >
+            <h6>HARRY POTTER </h6>
+            <h3>LUNA LOVEGOOD LION MASK</h3>
+            <p>$ 1.799,99</p>
+            <p>3 CUOTAS SIN INTERES</p>
+            </article> 
+         </section>
+    <nav> 
+    <ul>
+        <li> <a href="shop.html">1</a> </li>
+        <li> <a href="#" >2</a></li>
+        <li> <a href="#">...</a></li>
+        <li> <a href="#">9</a> </li>
+        <li><a href="#">10</a></li>
+    </ul>
+    </nav>
+</main>
+<!--fin main-->
+ <!-- Footer -->
+ <footer class="fondo-footer">
+        <ul>
+            <li><a href="../pages_tienda/shop.html">Shop</a></li>
+            <li><a href="#">Ingresar</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div>All rights reserved 2023 - Funkoshop &copy ;</div>
+        <div>
+            <img src="../multimedia/branding/logo_light_horizontal.svg" alt="Logo del sitio" />
+        </div>
+    </footer>
 </body>
+
 </html>
