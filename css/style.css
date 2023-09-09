@@ -94,3 +94,69 @@ img {
 }
 
 /*Fin Normalización*/
+
+/*HEADER*/
+
+header{
+    background-color: var(--mode-dark-solid);
+    padding: var(--spacing-36);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    max-width: 300px;
+}
+
+.navbar__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-20);
+}
+
+.navbar__link{
+    font-size: var(--font-medium);
+    display: inline-block;
+    padding: var(--spacing-8) var(--spacing-16);
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+.navbar__link:hover{
+    background-color: var(--red-900);
+}
+
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+ }
+
+ .submenu{
+    width: 300px;
+    display: none;
+    position: absolute;
+    background-color: var(--mode-dark-solid);
+ }
+
+ .with__submenu:hover .submenu{
+    display: block;
+
+ }
+
+ .submenu__link{
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+ }
+ .submenu__link:hover{
+    background-color: var(--red-900);
+    transition: background .3s ease-in-out;
+ }
+
+ /*FIN ESTILOS HEADER*/
