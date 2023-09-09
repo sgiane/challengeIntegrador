@@ -160,3 +160,18 @@ header{
  }
 
  /*FIN ESTILOS HEADER*/
+
+  /*FOOTER*/
+
+  .footer {
+    background-color: var(--mode-dark-solid);
+    padding: var(--spacing-48);
+}
+
+ .footer__copy {
+    font-size: var(--font-medium2);
+    text-align: center;
+    margin-top: var(--spacing-36);
+}
+
+ /*FIN ESTILOS FOOTER*/
