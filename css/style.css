@@ -212,6 +212,49 @@ header{
     background-color: var(--red-900);
     color: var(--light-solid);
  }
+ /*ESTILOS CARDS*/
+.collection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: var(--spacing-16) 0;
+ }
+ .collection:nth-child(2) .collection__img{
+    order: -1;
+ }
+ .collection__item{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24);
+    align-items: start;  
+ }
+ 
+ .collection__title{
+    font-family: var(--font-alternativa);
+    font-size: var(--font-display);
+    font-weight: 500;
+ }
+ .collection__description{
+    font-family: var(--font-alternativa);
+    font-size: var(--font-large);
+    font-weight: 400;
+    border-bottom: 3px solid var(--red-solid);
+    padding-bottom: var(--spacing-20);
+ }
+ .collection__link{
+    display: inline-block;
+    font-size: var(--font-large);
+    color: var(--light-solid);
+    background-color: var(--mode-dark-solid);
+    padding: var(--spacing-16) var(--spacing-36);
+    border-radius: 50px;
+    font-weight: 500;
+    margin-top: var(--spacing-24);
+    transition: all .3s ease-in-out;
+ }
+ .collection__link:hover{
+    background-color: var(--red-900);
+ }
 
   /*FOOTER*/
 
