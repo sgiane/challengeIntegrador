@@ -383,7 +383,9 @@ header {
    grid-template-rows: repeat(7 1fr);
 }
 
-.form__create form>* {
+.form__create, 
+.form__contacto
+form>* {
    padding: 20px 0;
 }
 
@@ -516,4 +518,55 @@ form .admin__title {
 
 .btn:hover {
    background-color: var(--red-900);
+}
+
+/* inicio CONTACTO */
+.form__contacto {
+   text-align: center;
+   display: flex;
+
+}
+
+.form__contacto form {
+   display: grid;
+   width: 830px;
+   grid-template-columns: 1fr 1fr;
+   margin: auto;
+}
+
+.form__contacto form .oneline {
+   width: 100%;
+   grid-column: 1/3;
+}
+
+.form__contacto form>* {
+   padding: 20px 0;
+}
+
+.comentario {
+   grid-column: 1/3;
+}
+
+.textarea__comentario {
+   width: 500px;
+   border-radius: 5px;
+   border: solid 1px var(--dark-solid);
+   border-radius: 5px;
+}
+
+.contacto__btn {
+   grid-column: 1/3;
+} 
+
+.contacto__email {
+   grid-column: 1 / 3;
+}
+
+.contacto__email .email {
+   width: 500px;
+}
+
+#btn{
+   margin: auto;
+
 }

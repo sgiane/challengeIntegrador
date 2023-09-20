@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../index.html">
+                    <img class="img-logo" src="../multimedia/branding/logo_light_horizontal.svg"
+                        alt="Isologotipo de la Marca funkoshop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with__submenu">
+                    <a class="navbar__link with-icon" href="../pages_tienda/shop.html">VER TIENDA</a>
+                    
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="admin.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">SALIR</a>
+                </li>
+               
+            </ul>
+        </nav>
+    </header> 
+<!-- fin header -->
+<!-- inicio contacto -->
+    <main class="container">
+        <section class="form__contacto">
+            <form action="" method="post">
+                <h1 class="admin__title oneline">CONTACTO</h1>
+
+                <div class="contacto__nombre">
+                    <label class="label__input" for="nombre">Nombre :</label>  
+                    <input class="input__item" type="text" placeholder="Nombre" required>
+                </div>
+
+                <div class="contacto__apellido">
+                    <label class="label__input" for="apellido">Apellido :</label>  
+                    <input class="input__item" type="text" placeholder="Apellido" required>
+                </div>
+
+                <div class="contacto__email ">
+                    <label class="label__input" for="email">E-mail :</label>  
+                    <input class="input__item" type="email" placeholder="Email" required>
+                </div>
+
+                <div class="comentario">
+                    <textarea class="textarea__comentario"  name="textarea" id="" cols="30" rows="10" 
+                        placeholder="Comentario"></textarea>
+                </div>
+                <div class="contacto__btn">
+                    <button class="btn" id="btn"  type="submit">ENVIAR</button>
+                </div>
+            </form>
+            
+        </section>
+    </main>
+<!--fn contacto  -->
+<!-- footer -->
+    <footer class="footer">
+        <div class="navbar container">
+            <ul>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages_tienda/shop.html">SHOP</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a class="navbar__link" href="register.html">REGISTRAR</a>
+                </li>
+                
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">INGRESAR</a>
+                </li>
+                
+            </ul>
+            <picture>
+                <img src="../multimedia/branding/isotype.svg" alt="Logo del sitio" />
+            </picture>
+        </div>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy ;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
