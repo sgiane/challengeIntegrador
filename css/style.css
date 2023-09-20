@@ -5,332 +5,515 @@
 /*Colores*/
 :root {
 
-    --red-solid:#FF3333;
-    --red-900: rgba(255, 51, 51, 0.9);
-    --red-500: rgba(255, 51, 51, 0.5);
-    --red-300: rgba(255, 51, 51, 0.3);
+   --red-solid: #FF3333;
+   --red-900: rgba(255, 51, 51, 0.9);
+   --red-500: rgba(255, 51, 51, 0.5);
+   --red-300: rgba(255, 51, 51, 0.3);
 
-    --blue-solid: #1D84B5;
-    --blue-900: rgba(29, 132, 181, 0.9);
-    --blue-500: rgba(29, 132, 181, 0.5);
-    --blue-300: rgba(29, 132, 181, 0.3);
+   --blue-solid: #1D84B5;
+   --blue-900: rgba(29, 132, 181, 0.9);
+   --blue-500: rgba(29, 132, 181, 0.5);
+   --blue-300: rgba(29, 132, 181, 0.3);
 
-    --dark-solid: #1F1F1F;
-    --dark-900: rgba(31, 31, 31, 0.9);
-    --dark-500: rgba(31, 31, 31, 0.5);
-    --dark-300: rgba(31, 31, 31, 0.3);
+   --dark-solid: #1F1F1F;
+   --dark-900: rgba(31, 31, 31, 0.9);
+   --dark-500: rgba(31, 31, 31, 0.5);
+   --dark-300: rgba(31, 31, 31, 0.3);
 
-    --light-solid: #FFFFFF;
-    
-    --mode-dark-solid: #30343F;
-    --mode-light-solid: #FAFAFF;
+   --light-solid: #FFFFFF;
 
-    /*Tipografía*/
+   --mode-dark-solid: #30343F;
+   --mode-light-solid: #FAFAFF;
 
-    --font-base: Inter, sans-serif;
-    --font-alternativa: raleway, sans-serif;
+   /*Tipografía*/
 
-    /*Tamaños de fuentes*/
-    
-    --font-display: 4.6em; /*46px*/
-    --font-jumbo: 3.8em; /*38px*/
-    --font-xlarge: 3em; /*30px*/
-    --font-large: 2.4em; /*24px*/
-    --font-medium2: 2em; /*20px*/
-    --font-medium: 1.8em; /*18px*/
-    --font-small: 1.6em; /*16px*/
-    --font-xsmall: 1.4em; /*14px*/
+   --font-base: Inter, sans-serif;
+   --font-alternativa: raleway, sans-serif;
 
-    /*Espaciados*/
+   /*Tamaños de fuentes*/
 
-    --spacing-128: 12.8rem;
-    --spacing-68: 6.8rem;
-    --spacing-48: 4.8rem;
-    --spacing-36: 3.6rem;
-    --spacing-28: 2.8rem;
-    --spacing-24: 2.4rem;
-    --spacing-20: 2.0rem;
-    --spacing-16: 1.6rem;
-    --spacing-12: 1.2rem;
-    --spacing-8: 0.8rem;
+   --font-display: 4.6em;
+   /*46px*/
+   --font-display2: 4.2em;
+   /*42px*/
+   --font-jumbo: 3.8em;
+   /*38px*/
+   --font-xlarge: 3em;
+   /*30px*/
+   --font-large: 2.4em;
+   /*24px*/
+   --font-medium2: 2em;
+   /*20px*/
+   --font-medium: 1.8em;
+   /*18px*/
+   --font-small: 1.6em;
+   /*16px*/
+   --font-xsmall: 1.4em;
+   /*14px*/
 
-} /*Fin de Variables*/
+   /*Espaciados*/
+
+   --spacing-128: 12.8rem;
+   --spacing-68: 6.8rem;
+   --spacing-48: 4.8rem;
+   --spacing-36: 3.6rem;
+   --spacing-28: 2.8rem;
+   --spacing-24: 2.4rem;
+   --spacing-20: 2.0rem;
+   --spacing-16: 1.6rem;
+   --spacing-12: 1.2rem;
+   --spacing-8: 0.8rem;
+
+}
+
+/*Fin de Variables*/
 
 /*Normalización de elementos*/
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
-html{
-    font-family: var(--font-base);
-    font-size: 62.5%;
+
+html {
+   font-family: var(--font-base);
+   font-size: 62.5%;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+   text-decoration: none;
+   color: inherit;
 }
 
-header, footer {
-    color: var(--light-solid);
-    font-family: var(--font-alternativa);
+header,
+footer {
+   color: var(--light-solid);
+   font-family: var(--font-alternativa);
 }
+
 /*p {
     font-size: 1.8em;
 }*/
 
-ul, ol{
-    list-style-type: none;
+ul,
+ol {
+   list-style-type: none;
 }
 
 img {
-    max-width: 100%;   
+   max-width: 100%;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+   max-width: 1200px;
+   margin: 0 auto;
 }
 
 /*Fin Normalización*/
 
 /*HEADER*/
 
-header{
-    background-color: var(--mode-dark-solid);
-    padding: var(--spacing-36);
+header {
+   background-color: var(--mode-dark-solid);
+   padding: var(--spacing-36);
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-.navbar__logo{
-    max-width: 300px;
+.navbar__logo {
+   max-width: 300px;
 }
 
-.navbar__menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--spacing-20);
+.navbar__menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: var(--spacing-20);
 }
 
-.navbar__link{
-    font-size: var(--font-medium);
-    display: inline-block;
-    padding: var(--spacing-8) var(--spacing-16);
-    transition: background .3s ease-in-out;
-    position: relative;
+.navbar__link {
+   font-size: var(--font-medium);
+   display: inline-block;
+   padding: var(--spacing-8) var(--spacing-16);
+   transition: background .3s ease-in-out;
+   position: relative;
 }
 
-.navbar__link:hover{
-    background-color: var(--red-900);
+.navbar__link:hover {
+   background-color: var(--red-900);
 }
 
-.with-icon{
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-8);
- }
-
- .submenu{
-    width: 300px;
-    display: none;
-    position: absolute;
-    background-color: var(--mode-dark-solid);
- }
-
- .with__submenu:hover .submenu{
-    display: block;
-
- }
-
- .submenu__link{
-    display: block;
-    padding: var(--spacing-8) var(--spacing-16);
-    font-size: var(--font-medium);
- }
- .submenu__link:hover{
-    background-color: var(--red-900);
-    transition: background .3s ease-in-out;
- }
-
- /*FIN ESTILOS HEADER*/
- /*ESTILOS BANNER*/
-.banner{
-    background-image: url(../multimedia/funkos-banner.webp);
-    padding: var(--spacing-128);
-    background-size: cover;
-    background-position: 50% 80%;
-    /* background-attachment: fixed; */
-    position: relative;
- }
- .banner::before{
-    content: '';
-    background-color: rgba(0, 0, 0, 0);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(2px) brightness(.6);
- }
- 
- .banner__content{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-20);
-    align-items: start;
-    z-index: 2;
-    position: relative;
- }
- .banner__title{
-    font-family: var(--font-alternativa);
-    font-size: var(--font-jumbo);
-    color: var(--light-solid);
- }
- .banner__subtitle{
-    font-family: var(--font-alternativa);
-    font-size: var(--font-medium);
-    color: var(--light-solid)
- }
- .banner__link{
-    display: inline-block;
-    font-size: var(--font-medium2);
-    background-color: var(--mode-light-solid);
-    padding: var(--spacing-12) var(--spacing-68);
-    border-radius: 50px;
-    font-weight: 500;
-    margin-top: var(--spacing-24);
-    transition: all .3s ease-in-out;
- }
- .banner__link:hover{
-    background-color: var(--red-900);
-    color: var(--light-solid);
- }
- /*ESTILOS CARDS*/
-.collection{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: var(--spacing-16) 0;
- }
- .collection:nth-child(2) .collection__img{
-    order: -1;
- }
- .collection__item{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-24);
-    align-items: start;  
- }
- 
- .collection__title{
-    font-family: var(--font-alternativa);
-    font-size: var(--font-display);
-    font-weight: 500;
- }
- .collection__description{
-    font-family: var(--font-alternativa);
-    font-size: var(--font-large);
-    font-weight: 400;
-    border-bottom: 3px solid var(--red-solid);
-    padding-bottom: var(--spacing-20);
- }
- .collection__link{
-    display: inline-block;
-    font-size: var(--font-large);
-    color: var(--light-solid);
-    background-color: var(--mode-dark-solid);
-    padding: var(--spacing-16) var(--spacing-36);
-    border-radius: 50px;
-    font-weight: 500;
-    margin-top: var(--spacing-24);
-    transition: all .3s ease-in-out;
- }
- .collection__link:hover{
-    background-color: var(--red-900);
- }
-
- /*ESTILOS SLIDER*/
-.slider{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-36);
-    margin: var(--spacing-68) auto;
- }
- 
- .slider__items{
-    display: flex;
-    gap: var(--spacing-24);
- }
- .slider__title{
-    font-family: var(--font-alternativa);
-    font-size: var(--font-display);
-    padding-bottom: var(--spacing-16);
- }
- .card-item__content{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-12);
-    padding: var(--spacing-16);
- }
- .card-item__licence{
-    font-size: var(--font-xsmall);
-    font-weight: 500;
- }
- .card-item__name{
-    font-size: var(--font-medium);
-    font-weight: 700;
- }
- .card-item__price{
-    font-size: var(--font-xsmall);
- }
- .card-item__cuotas{
-    font-size: var(--font-xsmall);
-    font-weight: 700;
-    color: var(--blue-solid);
- }
- .card-item__img{
-    display: flex;
-    position: relative;
- }
- .card-item__img img{
-    animation: fade 1s;
- }
- .card-item__img--back{
-    display: none;
- }
- .card-item__img:hover .card-item__img--back{
-    display: block;   
- }
- .card-item__img:hover .card-item__img--front{
-    display: none;   
- }
- .card-item__tag{
-    font-size: var(--font-xsmall);
-    background-color: var(--red-solid);
-    color: var(--light-solid);
-    padding: var(--spacing-8) var(--spacing-12);
-    right: 0;
-    position: absolute;
- }
-
-  /*FOOTER*/
-
-  .footer {
-    background-color: var(--mode-dark-solid);
-    padding: var(--spacing-48);
+.with-icon {
+   display: flex;
+   align-items: center;
+   gap: var(--spacing-8);
 }
 
- .footer__copy {
-    font-size: var(--font-medium2);
-    text-align: center;
-    margin-top: var(--spacing-36);
+.submenu {
+   width: 300px;
+   display: none;
+   position: absolute;
+   background-color: var(--mode-dark-solid);
 }
 
- /*FIN ESTILOS FOOTER*/
+.with__submenu:hover .submenu {
+   display: block;
+
+}
+
+.submenu__link {
+   display: block;
+   padding: var(--spacing-8) var(--spacing-16);
+   font-size: var(--font-medium);
+}
+
+.submenu__link:hover {
+   background-color: var(--red-900);
+   transition: background .3s ease-in-out;
+}
+
+/*FIN ESTILOS HEADER*/
+/*ESTILOS BANNER*/
+.banner {
+   background-image: url(../multimedia/funkos-banner.webp);
+   padding: var(--spacing-128);
+   background-size: cover;
+   background-position: 50% 80%;
+   /* background-attachment: fixed; */
+   position: relative;
+}
+
+.banner::before {
+   content: '';
+   background-color: rgba(0, 0, 0, 0);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   backdrop-filter: blur(2px) brightness(.6);
+}
+
+.banner__content {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-20);
+   align-items: start;
+   z-index: 2;
+   position: relative;
+}
+
+.banner__title {
+   font-family: var(--font-alternativa);
+   font-size: var(--font-jumbo);
+   color: var(--light-solid);
+}
+
+.banner__subtitle {
+   font-family: var(--font-alternativa);
+   font-size: var(--font-medium);
+   color: var(--light-solid)
+}
+
+.banner__link {
+   display: inline-block;
+   font-size: var(--font-medium2);
+   background-color: var(--mode-light-solid);
+   padding: var(--spacing-12) var(--spacing-68);
+   border-radius: 50px;
+   font-weight: 500;
+   margin-top: var(--spacing-24);
+   transition: all .3s ease-in-out;
+}
+
+.banner__link:hover {
+   background-color: var(--red-900);
+   color: var(--light-solid);
+}
+
+/*ESTILOS CARDS*/
+.collection {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   padding: var(--spacing-16) 0;
+}
+
+.collection:nth-child(2) .collection__img {
+   order: -1;
+}
+
+.collection__item {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-24);
+   align-items: start;
+}
+
+.collection__title {
+   font-family: var(--font-alternativa);
+   font-size: var(--font-display);
+   font-weight: 500;
+}
+
+.collection__description {
+   font-family: var(--font-alternativa);
+   font-size: var(--font-large);
+   font-weight: 400;
+   border-bottom: 3px solid var(--red-solid);
+   padding-bottom: var(--spacing-20);
+}
+
+.collection__link {
+   display: inline-block;
+   font-size: var(--font-large);
+   color: var(--light-solid);
+   background-color: var(--mode-dark-solid);
+   padding: var(--spacing-16) var(--spacing-36);
+   border-radius: 50px;
+   font-weight: 500;
+   margin-top: var(--spacing-24);
+   transition: all .3s ease-in-out;
+}
+
+.collection__link:hover {
+   background-color: var(--red-900);
+}
+
+/*ESTILOS SLIDER*/
+.slider {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-36);
+   margin: var(--spacing-68) auto;
+}
+
+.slider__items {
+   display: flex;
+   gap: var(--spacing-24);
+}
+
+.slider__title {
+   font-family: var(--font-alternativa);
+   font-size: var(--font-display);
+   padding-bottom: var(--spacing-16);
+}
+
+.card-item__content {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-12);
+   padding: var(--spacing-16);
+}
+
+.card-item__licence {
+   font-size: var(--font-xsmall);
+   font-weight: 500;
+}
+
+.card-item__name {
+   font-size: var(--font-medium);
+   font-weight: 700;
+}
+
+.card-item__price {
+   font-size: var(--font-xsmall);
+}
+
+.card-item__cuotas {
+   font-size: var(--font-xsmall);
+   font-weight: 700;
+   color: var(--blue-solid);
+}
+
+.card-item__img {
+   display: flex;
+   position: relative;
+}
+
+.card-item__img img {
+   animation: fade 1s;
+}
+
+.card-item__img--back {
+   display: none;
+}
+
+.card-item__img:hover .card-item__img--back {
+   display: block;
+}
+
+.card-item__img:hover .card-item__img--front {
+   display: none;
+}
+
+.card-item__tag {
+   font-size: var(--font-xsmall);
+   background-color: var(--red-solid);
+   color: var(--light-solid);
+   padding: var(--spacing-8) var(--spacing-12);
+   right: 0;
+   position: absolute;
+}
+
+/*FOOTER*/
+
+.footer {
+   background-color: var(--mode-dark-solid);
+   padding: var(--spacing-48);
+}
+
+.footer__copy {
+   font-size: var(--font-medium2);
+   text-align: center;
+   margin-top: var(--spacing-36);
+}
+
+/*FIN ESTILOS FOOTER*/
+/*ESTILOS CREATE*/
+
+.form__create form {
+   display: grid;
+   width: 830px;
+   grid-template-columns: repeat(12 1fr);
+   grid-template-rows: repeat(7 1fr);
+}
+
+.form__create form>* {
+   padding: 20px 0;
+}
+
+.input__item {
+   font-family: var(--font-base);
+   font-size: var(--font-small);
+   font-weight: 300;
+   padding: .3em;
+   border: none;
+   border-bottom: 2px solid var(--red-solid);
+   padding: .5em;
+
+}
+
+.select__item {
+   width: 240px;
+   padding: .5em;
+   border-radius: 5px;
+   border: solid 2px var(--dark-solid);
+   margin-left: var(--spacing-16);
+   font-family: var(--font-base);
+   font-weight: 500;
+   font-size: var(--font-medium2);
+   color: rgb(187, 179, 179);
+}
+
+.select__item__cuota {
+   font-family: var(--font-base);
+   font-size: var(--font-small);
+   width: 300px;
+   padding: .5em;
+   border-radius: 5px;
+   margin-left: var(--spacing-16);
+   border: solid 2px var(--dark-solid);
+
+}
+
+.form__create form .label__select {
+   font-size: var(--font-large);
+   font-weight: 300;
+}
+
+.label__input {
+   font-family: var(--font-base);
+   font-size: var(--font-large);
+   font-weight: 400;
+   line-height: 29.05px;
+}
+
+.select__option {
+   font-size: var(--font-small);
+}
+
+form .admin__title {
+   font-family: var(--font-alternativa);
+   font-size: var(--font-display2);
+   font-weight: 700;
+
+}
+
+.form__create form .oneline {
+   grid-column: 1 / 13;
+}
+
+.select__categoria {
+   grid-column: 1 / 6;
+   margin-right: 30px;
+}
+
+.select__licencia {
+   grid-column: 6 / 13;
+   margin-left: 30px;
+}
+
+.sku__item {
+   grid-column: 1 / 4;
+   grid-row: 5;
+}
+
+.precio__item {
+   grid-column: 4 / 8;
+   grid-row: 5;
+}
+
+.stock__item {
+   grid-column: 8 / 13;
+   grid-row: 5;
+}
+
+.stock__item input {
+   width: 40px;
+}
+
+.descuento__item {
+   grid-column: 1 / 3;
+   padding: var(--spacing-12);
+}
+
+.descuento__item input {
+   width: 40px;
+}
+
+.cuota__item {
+   grid-column: 3 / 10;
+   padding: var(--spacing-12);
+   margin-left: var(--spacing-12);
+}
+
+.textarea__descripcion {
+   width: 100%;
+   font-family: var(--font-base);
+   font-size: var(--font-small);
+   font-weight: 400;
+   border: solid 1px var(--dark-solid);
+   border-radius: 5px;
+}
+
+.btn {
+   padding: .7em;
+   width: 180px;
+   height: 44px;
+   margin: 1em 3em 1.5em 0;
+   border: none;
+   background-color: var(--red-solid);
+   color: var(--light-solid);
+   transition: background .3s ease-in-out;
+   font-size: var(--font-xsmall);
+   font-weight: 600;
+}
+
+.btn:hover {
+   background-color: var(--red-900);
+}
