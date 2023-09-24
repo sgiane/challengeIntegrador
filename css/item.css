@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+
+/*Creación de variables*/
+
+/*Colores*/
+:root {
+  --red-solid: #ff3333;
+  --red-900: rgba(255, 51, 51, 0.9);
+  --red-500: rgba(255, 51, 51, 0.5);
+  --red-300: rgba(255, 51, 51, 0.3);
+
+  --blue-solid: #1d84b5;
+  --blue-900: rgba(29, 132, 181, 0.9);
+  --blue-500: rgba(29, 132, 181, 0.5);
+  --blue-300: rgba(29, 132, 181, 0.3);
+
+  --dark-solid: #1f1f1f;
+  --dark-900: rgba(31, 31, 31, 0.9);
+  --dark-500: rgba(31, 31, 31, 0.5);
+  --dark-300: rgba(31, 31, 31, 0.3);
+
+  --light-solid: #ffffff;
+
+  --mode-dark-solid: #30343f;
+  --mode-light-solid: #fafaff;
+
+  /*Tipografía*/
+
+  --font-base: Inter, sans-serif;
+  --font-alternativa: raleway, sans-serif;
+
+  /*Tamaños de fuentes*/
+
+  --font-display: 4.6em;
+  /*46px*/
+  --font-display2: 4.2em;
+  /*42px*/
+  --font-jumbo: 3.8em;
+  /*38px*/
+  --font-xlarge: 3em;
+  /*30px*/
+  --font-large: 2.4em;
+  /*24px*/
+  --font-medium2: 2em;
+  /*20px*/
+  --font-medium: 1.8em;
+  /*18px*/
+  --font-small: 1.6em;
+  /*16px*/
+  --font-xsmall: 1.4em;
+  /*14px*/
+
+  /*Espaciados*/
+
+  --spacing-128: 12.8rem;
+  --spacing-68: 6.8rem;
+  --spacing-48: 4.8rem;
+  --spacing-36: 3.6rem;
+  --spacing-28: 2.8rem;
+  --spacing-24: 2.4rem;
+  --spacing-20: 2rem;
+  --spacing-16: 1.6rem;
+  --spacing-12: 1.2rem;
+  --spacing-8: 0.8rem;
+}
+
+/*Fin de Variables*/
+
+/*Normalización de elementos*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-base);
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header,
+footer {
+  color: var(--light-solid);
+  font-family: var(--font-alternativa);
+}
+
+/*p {
+    font-size: 1.8em;
+}*/
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Fin Normalización*/
+
+/*HEADER*/
+
+header {
+  background-color: var(--mode-dark-solid);
+  padding: var(--spacing-36);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  max-width: 300px;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-20);
+}
+
+.navbar__link {
+  font-size: var(--font-medium);
+  display: inline-block;
+  padding: var(--spacing-8) var(--spacing-16);
+  transition: background 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbar__link:hover {
+  background-color: var(--red-900);
+}
+
+.with-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.submenu {
+  width: 300px;
+  display: none;
+  position: absolute;
+  background-color: var(--mode-dark-solid);
+}
+
+.with__submenu:hover .submenu {
+  display: block;
+}
+
+.submenu__link {
+  display: block;
+  padding: var(--spacing-8) var(--spacing-16);
+  font-size: var(--font-medium);
+}
+
+.submenu__link:hover {
+  background-color: var(--red-900);
+  transition: background 0.3s ease-in-out;
+}
+
+/*--MAIN--*/
+
+/*Focus Card*/
+
+.main__focusCard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.picture__imgYoda {
+  width: 50em;
+}
+
+.focusCard__article {
+  width: 40em;
+  height: 25em;
+}
+
+.article__tag {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+.article__title {
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.article__text {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+
+.article__price {
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.article__input {
+  padding-bottom: 1em;
+  height: 5em;
+}
+
+.article__btn {
+  font-size: var(--font-xsmall);
+  background-color: var(--red-solid);
+  color: var(--light-solid);
+  padding: 0.3em 1em;
+  border: none;
+}
+
+.article__payments {
+  padding-top: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--blue-solid);
+}
+
+.payments__link {
+  text-align: center;
+}
+
+/*Others Cards*/
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-36);
+  margin: var(--spacing-68) auto;
+}
+
+.slider__items {
+  display: flex;
+  gap: var(--spacing-24);
+}
+
+.slider__title {
+  font-family: var(--font-alternativa);
+  font-size: var(--font-display);
+  padding-bottom: var(--spacing-16);
+}
+
+.card-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+  padding: var(--spacing-16);
+}
+
+.card-item__licence {
+  font-size: var(--font-xsmall);
+  font-weight: 500;
+}
+
+.card-item__name {
+  font-size: var(--font-medium);
+  font-weight: 700;
+}
+
+.card-item__price {
+  font-size: var(--font-xsmall);
+}
+
+.card-item__cuotas {
+  font-size: var(--font-xsmall);
+  font-weight: 700;
+  color: var(--blue-solid);
+}
+
+.card-item__img {
+  display: flex;
+  position: relative;
+}
+
+.card-item__img img {
+  animation: fade 1s;
+}
+
+.card-item__img--back {
+  display: none;
+}
+
+.card-item__img:hover .card-item__img--back {
+  display: block;
+}
+
+.card-item__img:hover .card-item__img--front {
+  display: none;
+}
+
+.card-item__tag {
+  font-size: var(--font-xsmall);
+  background-color: var(--red-solid);
+  color: var(--light-solid);
+  padding: var(--spacing-8) var(--spacing-12);
+  right: 0;
+  position: absolute;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: var(--mode-dark-solid);
+  padding: var(--spacing-48);
+}
+
+.footer__copy {
+  font-size: var(--font-medium2);
+  text-align: center;
+  margin-top: var(--spacing-36);
+}
