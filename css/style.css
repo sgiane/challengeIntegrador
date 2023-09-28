@@ -613,3 +613,60 @@ grid-template-rows: 15% 15% 5% 5% 5% 5% 5% 5% 5%;
 .select__option{padding:var(--spacing-8);}
 .input__number1{width:35px;}
 .input__number2{width:35px;}
+
+
+/*ESTILOS MAIN*/
+footer {
+   background-color: var(--mode-dark-solid);
+   padding: var(--spacing-48);
+}
+
+.footer__copy {
+   font-size: var(--font-medium2);
+   text-align: center;
+   margin-top: var(--spacing-36);
+}
+
+ 
+.main__cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8,
+.card-9 {
+   flex: 0 1 calc(33.33% - 20px); 
+   margin-bottom: 20px; 
+
+}
+
+article {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-12);
+   padding: var(--spacing-16);}
+
+   .main-containershop { padding-right:var(--spacing-68) ; 
+      padding-top:var(--spacing-36) ;
+      padding-bottom:var(--spacing-36) ;
+      display: flex;
+  }
+  
+  .sidebar { flex: 0 1 25%; 
+      order: -1;
+  }
+  
+  .main__cards {display: flex;
+      flex-wrap: wrap;
+      flex: 1; 
+  }
+  
+  
