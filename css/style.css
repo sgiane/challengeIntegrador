@@ -393,6 +393,7 @@ header {
 .form__create,
 .form__register, 
 .form__contacto,
+.form__login,
 form > * {
    margin: var(--spacing-20) 0;
 }
@@ -438,7 +439,6 @@ form > * {
    font-family: var(--font-base);
    font-size: var(--font-large);
    font-weight: 400;
-   line-height: 29.05px;
 }
 
 .select__option {
@@ -541,6 +541,54 @@ input[type="file"]{
 .btn:hover {
    background-color: var(--red-900);
 }
+/* ESTILOS LOGIN */
+
+.form__login form {
+   display: grid;
+   grid-template-columns: 1fr 150px 200px 1fr;
+   margin: var(--spacing-128) auto;
+}
+.login__title {
+   font-family: var(--font-alternativa);
+   font-size: var(--font-display2);
+   font-weight: 700;
+   grid-column: 1/5;
+   text-align: center;
+}
+
+.label__input-login {
+   font-family: var(--font-base);
+   font-size: var(--font-large);
+   font-weight: 400;
+   grid-column: 2 / 3;
+}
+
+.login__btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-column: 1 / 5;
+}
+
+.login__btn button {
+   width: 8em;
+   margin: 0;
+}
+
+.input__recordar{
+   margin-left: 2em;
+}
+.label__recordar{
+   font-size: var(--font-small);
+   margin-left: var(--spacing-8);
+}
+
+.recuperar{   
+   text-align: center;
+   font-size: var(--font-xsmall);
+   color: var(--blue-solid);   
+   grid-column: 1/5;
+}
 
 /* INICIO ESTILOS REGISTER */
 
@@ -593,7 +641,8 @@ input[type="file"]{
 .admin__form{
    margin: var(--spacing-36) 0;
 }
-.admin__search{
+.admin__search,
+.form__login {
    display: flex;
 }
 .admin__input{
@@ -705,10 +754,36 @@ input[type="file"]{
    margin: auto;
 }
 
-/*ESTILOS ASIDE*/
-aside { width: 500px; height: 600px; margin-top:var(--spacing-28);
+/*ESTILOS SHOP*/
+/*ASIDE*/
+header{
+   grid-area: header;
+ }
+ aside{
+   grid-area: aside;
+ }
+ main{
+   grid-area: main;
+ }
+ footer{
+   grid-area: footer;
+ }
+ .grid-container{
+   display: grid;
+   grid-template-columns: 400px 2fr;
+   grid-template-rows: 120px 1fr 250px;
+   grid-template-areas: 
+   "header header"
+   "aside main"
+   "footer footer";
+ }
+
+/* aside { 
+   width: 500px; 
+   height: 600px; 
+   margin-top:var(--spacing-28);
    margin-left:var(--spacing-68);
-  }
+}
 
 form {
 display:grid;
@@ -741,22 +816,50 @@ grid-template-rows: 15% 15% 5% 5% 5% 5% 5% 5% 5%;
 .input__search {padding:var(--spacing-8);}
 .select__option{padding:var(--spacing-8);}
 .input__number1{width:35px;}
-.input__number2{width:35px;}
-
-
-/*ESTILOS MAIN*/
-footer {
-   background-color: var(--mode-dark-solid);
-   padding: var(--spacing-48);
+.input__number2{width:35px;} */
+.filter__item{
+   display: flex;
+   padding-left: var(--spacing-128);
+ }
+ .filter__item form > *{
+   padding: var(--spacing-12);
+ }
+ .filter__title{
+   font-size: var(--font-medium);
+   font-weight: 500;
+   padding: var(--spacing-12) 0;
+ }
+ .filter__check{
+   display:inline-block;
+   flex-direction: column;
+ }
+ .input__search, .select__order{
+   padding: .5em;
+   border-radius: 0.5em;
+   width: 100%; 
+ }
+ .input__price{
+   width: 4em;
+   padding:0.2em;
+   border-radius: 5px;
+   margin-left: var(--spacing-8);
+  }
+  .label__filter-price{
+   font-size: var(--font-small);
+  }
+  .label__filter-check{
+   font-size: var(--font-medium);
+   margin-left: 0.3em;
+  }
+  .filter__check-item{
+   padding: 0.3em 0;
 }
+input[type=checkbox] {
+   transform: scale(1.5);
+ }
 
-.footer__copy {
-   font-size: var(--font-medium2);
-   text-align: center;
-   margin-top: var(--spacing-36);
-}
+/*MAIN*/
 
- 
 .main__cards {
    display: flex;
    flex-wrap: wrap;
@@ -774,7 +877,6 @@ footer {
 .card-9 {
    flex: 0 1 calc(33.33% - 20px); 
    margin-bottom: 20px; 
-
 }
 
 article {
@@ -783,10 +885,9 @@ article {
    gap: var(--spacing-12);
    padding: var(--spacing-16);}
 
-   .main-containershop { padding-right:var(--spacing-68) ; 
-      padding-top:var(--spacing-36) ;
-      padding-bottom:var(--spacing-36) ;
+   .main-containershop { 
       display: flex;
+      padding: var(--spacing-36) var(--spacing-128) var(--spacing-68) 0;
   }
   
   .sidebar { flex: 0 1 25%; 
