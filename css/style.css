@@ -583,7 +583,72 @@ input[type="file"]{
 .label__terminos span{
    color: var(--blue-solid);
 }
+/* ESTILOS ADMIN */
 
+.admin__form{
+   margin: var(--spacing-36) 0;
+}
+.admin__search{
+   display: flex;
+}
+.admin__input{
+   width: 530px;
+   border-radius: 0.5em;
+   padding: var(--spacing-12);
+   font-family: var(--font-base);
+   font-size: var(--font-medium2);
+   font-weight: 500;
+   margin-left: var(--spacing-16);
+}
+.admin__section{
+   display: flex;
+   flex-direction: column;
+   width: 1126px;
+}
+
+.admin__add{
+   display: flex;
+   align-items: center;
+   margin-right: var(--spacing-48);
+}
+
+.admin__add img{
+   width: 30px;
+   margin-left: var(--spacing-20);
+}
+
+.admin__table{
+   margin: var(--spacing-48) 0;
+   font-size: var(--font-large);
+   font-weight: 500;
+}
+
+.input__table{
+   font-size: var(--font-medium2);
+}
+
+.admin__table-head th {
+   text-align: left;
+   padding-bottom:var(--spacing-20);  
+}
+
+.admin__table-td{
+   padding: var(--spacing-8) var(--spacing-8) ;
+   margin: 0;
+}
+.admin__encabezado{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.admin__agregar{
+   font-size: var(--font-large);
+   font-weight: 700;
+}
+.admin__title{
+   font-family: var(--font-alternativa);
+   font-size: var(--font-display2);
+}
 
 /* inicio CONTACTO */
 .form__contacto {
