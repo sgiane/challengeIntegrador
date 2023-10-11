@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="grid-container">
     <!--Inicio Header -->
     <header>
     <nav class="navbar container">
@@ -49,55 +49,53 @@
     </nav>
 </header> 
 <!--Fin Header-->
+  <!--inicio aside -->  
+
+       <aside class="filter__item">
+        <form action="" method="post">
+            <div class="filter__search">
+                <h3 class="filter__title">BUSCAR</h3>
+                <input class="input__search" type="text" name="busqueda" id="busqueda" placeholder="Item o categoría" />
+            </div>
+            <div class="filter__order">
+                <h3 class="filter__title">ORDENAR POR</h3>
+                <select class="select__order" name="orden" id="orden">
+                    <option class="select__order-mayor" value="mayor"> Mayor a menor</option>
+                    <option class="select__order-menor" value="menor"> Menor a mayor</option>
+                </select>
+            </div>
+            <div class="filter__price">
+                <h3 class="filter__title">PRECIO</h3>
+                <label class="label__filter-price" for="min">MIN</label>
+                <input class="input__price" type="number" name="min" id="min" placeholder="0" />
+                <label class="label__filter-price" for="max">MAX</label>
+                <input class="input__price" type="number" name="max" id="max" placeholder="0" />
+            </div>
+            <div class="filter__check">
+                <h3 class="filter__title">FILTRAR</h3>
+                <div class="filter__check-item">
+                <input class="input__check" type="checkbox" name="nuevos" id="nuevos" value="1" />
+                    <label class="label__filter-check" for="nuevos">NUEVOS</label>
+                </div>
+                <div class="filter__check-item">
+                <input class="input__check" type="checkbox" name="ofertas" id="ofertas" value="2" />
+                    <label class="label__filter-check" for="ofertas">OFERTAS</label>
+                </div>
+                <div class="filter__check-item">
+                <input class="input__check" type="checkbox" name="edicion especial" id="edicion especial" value="3" />
+                    <label class="label__filter-check" for="edicion especial">EDICIÓN ESPECIAL</label>
+                </div>
+                <div class="filter__check-item">
+                <input class="input__check" type="checkbox" name="favoritos" id="favoritos" value="4" />
+                    <label class="label__filter-check" for="favoritos">FAVORITOS</label>
+                </div>
+            </div>
+        </form>
+    
+    </aside>
+<!--fin aside-->
 <!--inicio main-->
 <main class="main-containershop">
-  <!--inicio aside -->   
-    <aside class="sidebar"> 
-        <form class="aside__form" action="" method="post" enctype="application/x-www-form-urlencoded" >
-         <div class="item-1">
-            <label  class="label__search"   for="busqueda"> BUSCAR </label> 
-           <input  class="input__search"  type="text" name="busqueda" id="busqueda" placeholder="item o categoría" />
-         </div> 
-
-         <div class="item-2">
-            <label class="label__orden">  ORDENAR POR</label>
-         <select class="select__option" name="orden" id="orden">
-            <option class="item__mayor" value="mayor"> mayor a menor</option> 
-            <option class="item__menor" value="menor"> menor a mayor</option>   
-            </select>
-        </div>    
-        <div class="item-3">
-            <label class="label__precio"> PRECIO </label>
-         </div>
-         <div class="item-4">
-            <label class="label__min" for="min" >MIN</label> 
-            <input  class="input__number1" type="number" name="min" id="min" placeholder="0" /> 
-    
-            <label  class="label__max" for="max" >MAX</label>
-            <input  class="input__number2" type="number" name="max" id="max" placeholder="0" />
-        </div>
-        <div class="item-5">
-            <label class="label__filtro"> FILTRAR </label>
-        </div>
-        <div class="item-6">
-            <input class="input__nuevos" type="checkbox" name="nuevos" id="nuevos" value="1"/>
-            <label class="label__nuevos" for="nuevos">NUEVOS</label>
-        </div>
-        <div class="item-7">
-            <input class="input__ofertas" type="checkbox" name="ofertas" id="ofertas" value="2"/>
-            <label class="label__ofertas" for="ofertas">OFERTAS</label>
-        </div> 
-        <div class="item-8">
-            <input class="input__edicion" type="checkbox" name="edicion especial" id="edicion especial" value="3"/>
-            <label class="label__edicion" for="edicion especial">EDICIÓN ESPECIAL</label>
-        </div>
-        <div class="item-9">
-            <input class="input__fav"  type="checkbox" name="favoritos" id="favoritos" value="4" />
-            <label class="label__fav" for="favoritos">FAVORITOS</label> 
-        </div>
-            </form>
-       </aside>
-<!--fin aside-->
 <section class= "main__cards">
     <!--starwars-->   
            <article class="card-1" >
@@ -233,17 +231,17 @@
    </main>
    <!--fin main-->
     <!-- Footer -->
-    <footer class="fondo-footer">
+    <footer class="footer">
        <div class="navbar container">
            <ul>
                <li class="navbar__item">
                    <a class="navbar__link" href="../pages_tienda/shop.html">SHOP</a>
                </li>
                <li class="navbar__item">
-                   <a class="navbar__link" href="#">INGRESAR</a>
+                   <a class="navbar__link" href="../pages_admin/login.html">INGRESAR</a>
                </li>
                <li class="navbar__item">
-                   <a class="navbar__link" href="#">CONTACTO</a>
+                   <a class="navbar__link" href="../pages_admin/contacto.html">CONTACTO</a>
                </li>
            </ul>
            <picture>
