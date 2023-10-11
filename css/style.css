@@ -873,45 +873,6 @@ header{
    "footer footer";
  }
 
-/* aside { 
-   width: 500px; 
-   height: 600px; 
-   margin-top:var(--spacing-28);
-   margin-left:var(--spacing-68);
-}
-
-form {
-display:grid;
-grid-template-columns: 50% 50%;
-grid-template-rows: 15% 15% 5% 5% 5% 5% 5% 5% 5%;
- row-gap: 1.9em;  
-}
-
-.label__search {font-size:var(--font-medium); font-weight: 600;}
-.label__orden {font-size:var(--font-medium); font-weight: 600;}
-.label__precio {font-size:var(--font-medium);font-weight:600 ;}
-.label__min {font-weight: 600;}
-.label__max{font-weight:600;}
-.label__filtro {font-size:var(--font-medium); font-weight:600 ;}
-.label__nuevos{font-size:var(--font-xsmall); font-weight:500;}
-.label__ofertas{font-size:var(--font-xsmall);font-weight:500;}
-.label__edicion{font-size:var(--font-xsmall);font-weight:500;}
-.label__fav{font-size:var(--font-xsmall);font-weight:500;}
-
-.item-1 {grid-row:1 ;}
-.item-2{grid-row:2 ;}
-.item-3 {grid-row:3;}
-.item-4{grid-row:4;}
-.item-5{grid-row:5;}
-.item-6 {grid-row:6;}
-.item-7{grid-row:7;}
-.item-8{ grid-row:8;}
-.item-9{grid-row:9;}
-
-.input__search {padding:var(--spacing-8);}
-.select__option{padding:var(--spacing-8);}
-.input__number1{width:35px;}
-.input__number2{width:35px;} */
 .filter__item{
    display: flex;
    padding-left: var(--spacing-128);
