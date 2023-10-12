@@ -870,7 +870,7 @@ header{
    grid-template-areas: 
    "header header"
    "aside main"
-   "footer footer";
+  "footer footer";
  }
 
 .filter__item{
@@ -941,18 +941,28 @@ article {
    gap: var(--spacing-12);
    padding: var(--spacing-16);}
 
-   .main-containershop { 
-      display: flex;
-      padding: var(--spacing-36) var(--spacing-128) var(--spacing-68) 0;
-  }
-  
-  .sidebar { flex: 0 1 25%; 
+   .sidebar { flex: 0 1 25%; 
       order: -1;
-  }
-  
-  .main__cards {display: flex;
+    }
+
+   .main__cards {display: flex;
       flex-wrap: wrap;
       flex: 1; 
+      
+   }
+
+   .main-containershop {
+      width: 90%; 
+     margin-top:35px;
   }
-  
-  
+  .pagination {
+   text-align: center; 
+   margin-top: 60px;
+   margin-bottom:60px;
+   list-style: none; 
+   }
+
+   .pagination li {
+   display: inline; 
+   margin: 0 15px; 
+   }
