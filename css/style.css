@@ -15,6 +15,8 @@
    --blue-500: rgba(29, 132, 181, 0.5);
    --blue-300: rgba(29, 132, 181, 0.3);
 
+   --gray-solid: #747474;
+
    --dark-solid: #1F1F1F;
    --dark-900: rgba(31, 31, 31, 0.9);
    --dark-500: rgba(31, 31, 31, 0.5);
@@ -634,3 +636,121 @@ input[type="file"]{
 #btn{
    margin: auto;
 }
+
+
+/* inicio estilos del carrito */
+
+.contenedor__carrito {
+   height: 900px;
+}
+
+section>div, article {
+   /* bordes */
+   margin: 2%;
+   padding: 1%;
+   border-radius: 6px;
+   box-shadow: 1px 1px 2px 2px rgba(142, 136, 136, 0.58);
+   -webkit-box-shadow: 1px 1px 2px 2px rgba(142, 136, 136, 0.58);
+   -moz-box-shadow: 1px 1px 2px 2px rgba(142, 136, 136, 0.58);
+}
+
+.carrito{
+   height: 60%;
+   padding: 5%;
+   background-color: var(--light-solid);
+}
+
+.carrito h1{
+   font-weight: bold;
+   text-decoration: underline  var(--red-solid);
+   font-size: var(--font-xlarge);
+}
+
+.carrito h3{
+   font-weight: bold;
+   font-size:  var(--font-medium);
+}
+
+.carrito p{
+   font-size: 14px;
+}
+
+.carrito>div{
+   /* columnas */
+   display: grid;
+   grid-template-columns: 33% 33% 33%;
+   font-weight: bold;
+   text-align: center;
+   align-items: center;
+   font-size:  var(--font-small);
+}
+
+.carrito>article {
+   /* columnas */ 
+   display: grid;
+   align-items: center;
+   
+   grid-template-columns: 10% 35% 35% 18% 2%;
+   height: 30%;
+}
+
+.carrito>article input {
+   width: 30%;
+   padding: 0px;
+   font-size: var(--font-small);
+   border: solid 0.5px var(--dark-solid);
+}
+
+.resumen {
+   float: right;
+   height: 40%;
+   width: 50%;
+   margin-right: 5%;
+}
+
+.resumen h1{
+   width: 100%;
+   font-weight: bold;
+   text-decoration: underline  var(--red-solid);
+   font-size: var(--font-xlarge);
+   text-align: right;
+   margin-bottom: 2%;
+}
+
+.resumen>div{
+   height: 40%;
+}
+
+.resumen label {
+   float: left;
+   font-weight: bold;
+   font-size: var(--font-small);
+}
+
+.resumen button {
+   height: 15%;
+   width: 100%;
+   background-color: var(--red-solid);
+   color: #FAFAFF;
+   border: none;
+   font-weight: bold;
+   font-size: var(--font-large);;
+}
+
+.resumen .valor_resumen {
+   float: right;
+   color: var(--gray-solid);
+   font-size: var(--font-small);
+}
+
+.resumen .total {
+   font-size: var(--font-medium);
+   margin-bottom: 2%;
+}
+
+.resumen hr {
+   margin-top: 5%;
+   width: 100%;
+}
+
+/*  fin estilos del carrito */
