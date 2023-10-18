@@ -842,27 +842,27 @@ input[type='file'] {
 
 /*ESTILOS SHOP*/
 /*ASIDE*/
-header {
-  grid-area: header;
-}
-aside {
-  grid-area: aside;
-}
-main {
-  grid-area: main;
-}
-footer {
-  grid-area: footer;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 400px 2fr;
-  grid-template-rows: 120px 1fr 250px;
-  grid-template-areas:
-    'header header'
-    'aside main'
-    'footer footer';
-}
+header{
+   grid-area: header;
+ }
+ aside{
+   grid-area: aside;
+ }
+ main{
+   grid-area: main;
+ }
+ footer{
+   grid-area: footer;
+ }
+ .grid-container{
+   display: grid;
+   grid-template-columns: 400px 2fr;
+   grid-template-rows: 120px 1fr 250px;
+   grid-template-areas: 
+   "header header"
+   "aside main"
+   "footer footer";
+ }
 
 .filter__item {
   display: flex;
@@ -934,83 +934,18 @@ article {
   padding: var(--spacing-16);
 }
 
-.main-containershop {
-  display: flex;
-  padding: var(--spacing-36) var(--spacing-128) var(--spacing-68) 0;
-}
-
-.sidebar {
-  flex: 0 1 25%;
-  order: -1;
-}
-
-.main__cards {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-}
-
-/*Styles Item*/
-
-/*--MAIN--*/
-
-/*Focus Card*/
-
-.main__focusCard {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.picture__imgYoda {
-  width: 50em;
-}
-
-.focusCard__article {
-  width: 40em;
-  height: 25em;
-}
-
-.article__tag {
-  font-size: 1em;
-  padding-bottom: 1em;
-}
-
-.article__title {
-  font-size: 2em;
-  padding-bottom: 1em;
-}
-
-.article__text {
-  font-size: 1.5em;
-  padding-bottom: 1em;
-}
-
-.article__price {
-  font-size: 2em;
-  padding-bottom: 1em;
-}
-
-.article__input {
-  padding-bottom: 1em;
-  height: 5em;
-}
-
-.article__btn {
-  font-size: var(--font-xsmall);
-  background-color: var(--red-solid);
-  color: var(--light-solid);
-  padding: 0.3em 1em;
-  border: none;
-}
-
-.article__payments {
-  padding-top: 1em;
-  font-size: 1.5em;
-  font-weight: 700;
-  color: var(--blue-solid);
-}
-
-.payments__link {
-  text-align: center;
-}
+   .main-containershop { 
+      display: flex;
+      padding: var(--spacing-36) var(--spacing-128) var(--spacing-68) 0;
+  }
+  
+  .sidebar { flex: 0 1 25%; 
+      order: -1;
+  }
+  
+  .main__cards {display: flex;
+      flex-wrap: wrap;
+      flex: 1; 
+  }
+  
+  
