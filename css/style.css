@@ -93,10 +93,6 @@ footer {
    font-family: var(--font-alternativa);
 }
 
-/*p {
-    font-size: 1.8em;
-}*/
-
 ul,
 ol {
    list-style-type: none;
@@ -111,18 +107,17 @@ img {
    margin: 0 auto;
 }
 
-
-
-
-
-
 /*Fin Normalización*/
 
 /*HEADER*/
 
 header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
    background-color: var(--mode-dark-solid);
    padding: var(--spacing-48);
+   
 }
 
 .navbar {
@@ -185,7 +180,6 @@ header {
    transition: background .3s ease-in-out;
 }
 
-/*FIN ESTILOS HEADER*/
 /*ESTILOS BANNER*/
 .banner {
    background-image: url(../multimedia/funkos-banner.webp);
@@ -801,7 +795,7 @@ input[type="file"]{
    font-size: var(--font-display2);
 }
 
-/* inicio CONTACTO */
+/* INICIO CONTACTO */
 .form__contacto {
    text-align: center;
    display: flex;
@@ -969,9 +963,7 @@ article {
    margin: 0 15px; 
    }
 
-
-
-/* inicio estilos del carrito */
+/* INICIO CARRITO DE COMPRAS */
 
 .contenedor__carrito {
    height: 900px;
@@ -1082,4 +1074,158 @@ article {
    width: 100%;
 }
 
-/*  fin estilos del carrito */
+
+/*DISEÑO RESPONSIVE*/
+
+.menu-abrir,
+.menu-cerrar {
+   display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 950px){
+
+   /*Responsive Header*/
+   .navbar__menu{
+      gap: 0.2em;  
+   }
+   .navbar__link{
+      font-size: var(--font-xsmall);
+   }
+   .navbar__logo {
+      max-width: 250px;
+   } 
+   header{
+      padding: var(--spacing-28);
+}
+}
+@media only screen and (min-width: 460px) and (max-width: 768px){
+  
+/*Responsive Header*/
+
+   header{
+      padding: var(--spacing-28);
+}
+   .navbar__logo {
+      max-width: 200px;
+   }
+   .menu-abrir{
+      margin-right: .5em;
+   }
+   .menu-abrir,
+   .menu-cerrar {
+      display: block;
+      border: none;
+      font-size: var(--font-jumbo);
+      background-color: transparent;
+      cursor: pointer;
+      color: var(--light-solid);
+   }
+   .nav{
+      opacity: 0;
+      visibility: hidden; /*Oculta el menú*/
+   
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+      position: absolute;
+      top: 3.2em;
+      right: 0;
+      background-color: var(--mode-dark-solid);
+      padding: 2em;
+      z-index: 2;
+   }
+
+   /*Esta clase se agrega al nav con un evento en js
+   para mostrar el menú al hacer click en el boton  */
+   .nav.visible{
+      opacity: 1;
+      visibility: visible; 
+   }
+
+   .navbar__menu{
+      flex-direction: column;
+   }
+
+   /*Responsive Banner*/
+
+   .banner{
+      padding: var(--spacing-48);
+   }
+   .banner__title {
+      font-size: var(--font-xlarge);
+   }
+   
+   .banner__subtitle {
+      font-size: var(--font-small);
+   }
+   
+   .banner__link {
+      font-size: var(--font-small);
+      padding: var(--spacing-8) var(--spacing-36);
+      margin-top: var(--spacing-8);
+   }
+}
+
+@media only screen and (max-width: 460px){
+
+   /*Responsive Header*/
+   
+   .navbar__logo {
+      max-width: 200px;
+   }
+   .navbar__link{
+      font-size: var(--font-xsmall);
+   }
+   .menu-abrir{
+      margin-right: .4em;
+   }
+   .menu-abrir,
+   .menu-cerrar {
+      display: block;
+      border: none;
+      font-size: var(--font-large);
+      background-color: transparent;
+      cursor: pointer;
+      color: var(--light-solid);
+   } 
+   .nav{
+      opacity: 0;
+      visibility: hidden; /*Oculta el menú*/
+   
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+      position: absolute;
+      top: 3.2em;
+      right: 0;
+      background-color: var(--mode-dark-solid);
+      padding: 2em;
+      z-index: 2;
+   }
+
+   .nav.visible{
+      opacity: 1;
+      visibility: visible; 
+   }
+   .navbar__menu{
+      flex-direction: column;
+   }
+    /*Responsive Banner*/
+
+    .banner{
+      padding: var(--spacing-36);
+   }
+   .banner__title {
+      font-size: var(--font-large);
+   }
+   
+   .banner__subtitle {
+      font-size: var(--font-xsmall);
+   }
+   
+   .banner__link {
+      font-size: var(--font-xsmall);
+      padding: var(--spacing-8) var(--spacing-28);
+      margin-top: var(--spacing-8);
+   } 
+}
