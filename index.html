@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FunkoShop</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
 </head>
 
 <body>
     <!--Inicio Header -->
     <header>
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="index.html">
-                    <img class="img-logo" src="multimedia/branding/logo_light_horizontal.svg"
-                        alt="Isologotipo de la Marca funkoshop">
-                </a>
-            </picture>
+
+        <picture class="navbar__logo">
+            <a href="index.html">
+                <img class="img-logo" src="multimedia/branding/logo_light_horizontal.svg"
+                    alt="Isologotipo de la Marca funkoshop">
+            </a>
+        </picture>
+        <button id="abrir" class="menu-abrir"><iconify-icon icon="fa6-solid:bars"></iconify-icon></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="menu-cerrar"><iconify-icon icon="fa6-solid:bars"></iconify-icon></button>
             <ul class="navbar__menu">
                 <li class="navbar__item with__submenu">
                     <a class="navbar__link with-icon" href="pages_tienda/shop.html">SHOP<iconify-icon
@@ -47,6 +51,7 @@
                 </li>
             </ul>
         </nav>
+        
     </header> <!--Fin Header-->
     <!-- Banner -->
     <section class="banner">
@@ -176,6 +181,7 @@
         </div>
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy ;</p>
     </footer>
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
