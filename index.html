@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FunkoShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/media.css"> -->
 </head>
 
 <body>
@@ -51,7 +52,7 @@
                 </li>
             </ul>
         </nav>
-        
+
     </header> <!--Fin Header-->
     <!-- Banner -->
     <section class="banner">
@@ -98,67 +99,73 @@
             </picture>
         </section>
         <!-- Card Últimos Lanzamientos -->
-        <section class="slider container">
+        <section class="slider container glide">
             <h2 class="slider__title">ÚLTIMOS LANZAMIENTOS</h2>
-            <ul class="slider__items">
-                <li class="slider__items">
-                    <article class="card-item">
-                        <a class="card-item__link" href="">
-                            <picture class="card-item__img">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="multimedia/star-wars/trooper-1.webp"
-                                    alt="Figura coleccionable de Funko Stormtrooper">
-                                <img class="card-item__img--back" src="multimedia/star-wars/trooper-box.webp"
-                                    alt="Figura coleccionable de Funko Stormtrooper Box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">STAR WARS</p>
-                                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
-                                <p class="card-item__price">$ 1.799,99</p>
-                                <p class="card-item__cuotas">3 CUOTAS SIN INTERES</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-                <li class="slider__items">
-                    <article class="card-item">
-                        <a class="card-item__link" href="">
-                            <picture class="card-item__img">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="multimedia/pokemon/pidgeotto-1.webp"
-                                    alt="Figura coleccionable de Funko Pidgeotto">
-                                <img class="card-item__img--back" src="multimedia/pokemon/pidgeotto-box.webp"
-                                    alt="Figura coleccionable de Funko Pidgeotto Box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">POKEMON</p>
-                                <h4 class="card-item__name">PIDGEOTTO</h4>
-                                <p class="card-item__price">$ 1.799,99</p>
-                                <p class="card-item__cuotas">3 CUOTAS SIN INTERES</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-                <li class="slider__items">
-                    <article class="card-item">
-                        <a class="card-item__link" href="">
-                            <picture class="card-item__img">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="multimedia/harry-potter/luna-1.webp"
-                                    alt="Figura coleccionable de Funko Luna Lovegood">
-                                <img class="card-item__img--back" src="multimedia/harry-potter/luna-box.webp"
-                                    alt="Figura coleccionable de Funko Luna Lovegood Box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">HARRY POTTER</p>
-                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
-                                <p class="card-item__price">$ 1.799,99</p>
-                                <p class="card-item__cuotas">3 CUOTAS SIN INTERES</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-            </ul>
+            <div class="glide__track" data-glide-el="track">
+                <ul class="slider__items glide__slides">
+                    <li class="slider__items glide__slide">
+                        <article class="card-item">
+                            <a class="card-item__link" href="">
+                                <picture class="card-item__img">
+                                    <span class="card-item__tag">NUEVO</span>
+                                    <img class="card-item__img--front" src="multimedia/star-wars/trooper-1.webp"
+                                        alt="Figura coleccionable de Funko Stormtrooper">
+                                    <img class="card-item__img--back" src="multimedia/star-wars/trooper-box.webp"
+                                        alt="Figura coleccionable de Funko Stormtrooper Box">
+                                </picture>
+                                <div class="card-item__content">
+                                    <p class="card-item__licence">STAR WARS</p>
+                                    <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                                    <p class="card-item__price">$ 1.799,99</p>
+                                    <p class="card-item__cuotas">3 CUOTAS SIN INTERES</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="slider__items glide__slide">
+                        <article class="card-item">
+                            <a class="card-item__link" href="">
+                                <picture class="card-item__img">
+                                    <span class="card-item__tag">NUEVO</span>
+                                    <img class="card-item__img--front" src="multimedia/pokemon/pidgeotto-1.webp"
+                                        alt="Figura coleccionable de Funko Pidgeotto">
+                                    <img class="card-item__img--back" src="multimedia/pokemon/pidgeotto-box.webp"
+                                        alt="Figura coleccionable de Funko Pidgeotto Box">
+                                </picture>
+                                <div class="card-item__content">
+                                    <p class="card-item__licence">POKEMON</p>
+                                    <h4 class="card-item__name">PIDGEOTTO</h4>
+                                    <p class="card-item__price">$ 1.799,99</p>
+                                    <p class="card-item__cuotas">3 CUOTAS SIN INTERES</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="slider__items glide__slide">
+                        <article class="card-item">
+                            <a class="card-item__link" href="">
+                                <picture class="card-item__img">
+                                    <span class="card-item__tag">NUEVO</span>
+                                    <img class="card-item__img--front" src="multimedia/harry-potter/luna-1.webp"
+                                        alt="Figura coleccionable de Funko Luna Lovegood">
+                                    <img class="card-item__img--back" src="multimedia/harry-potter/luna-box.webp"
+                                        alt="Figura coleccionable de Funko Luna Lovegood Box">
+                                </picture>
+                                <div class="card-item__content">
+                                    <p class="card-item__licence">HARRY POTTER</p>
+                                    <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                    <p class="card-item__price">$ 1.799,99</p>
+                                    <p class="card-item__cuotas">3 CUOTAS SIN INTERES</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon class="icon__slider" icon="tabler:chevron-left"></iconify-icon></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon class="icon__slider" icon="tabler:chevron-right"></iconify-icon></button>
+            </div>
         </section>
     </main>
     <!-- Footer -->
@@ -175,7 +182,7 @@
                     <a class="navbar__link" href="pages_admin/contacto.html">Contacto</a>
                 </li>
             </ul>
-            <picture>
+            <picture class="footer__logo">
                 <img src="multimedia/branding/isotype.svg" alt="Logo del sitio" />
             </picture>
         </div>
@@ -183,6 +190,25 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide',{
+            type: 'carousel',
+            startArt: 0,
+            perView: 3,
+            gap: 30,
+            breakpoints: {
+                991:{
+                    perView: 2
+                },
+                768:{
+                    perView: 1,
+                    gap:0
+                }
+            }
+        }).mount()
+    </script>
+
 </body>
 
 </html>

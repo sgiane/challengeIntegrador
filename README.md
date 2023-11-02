@@ -10,4 +10,3 @@ Proyecto Integrador de curso FullStack NodeJS. Desarrollo de tienda virtual Funk
 * Sol
 * Greta
 * Pablo
-* Andres
