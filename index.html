@@ -13,7 +13,6 @@
 <body>
     <!--Inicio Header -->
     <header>
-
         <picture class="navbar__logo">
             <a href="index.html">
                 <img class="img-logo" src="multimedia/branding/logo_light_horizontal.svg"
@@ -163,8 +162,10 @@
                 </ul>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon class="icon__slider" icon="tabler:chevron-left"></iconify-icon></button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon class="icon__slider" icon="tabler:chevron-right"></iconify-icon></button>
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon class="icon__slider"
+                        icon="tabler:chevron-left"></iconify-icon></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon class="icon__slider"
+                        icon="tabler:chevron-right"></iconify-icon></button>
             </div>
         </section>
     </main>
@@ -192,18 +193,18 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-        new Glide('.glide',{
+        new Glide('.glide', {
             type: 'carousel',
             startArt: 0,
             perView: 3,
             gap: 30,
             breakpoints: {
-                991:{
+                991: {
                     perView: 2
                 },
-                768:{
+                768: {
                     perView: 1,
-                    gap:0
+                    gap: 0
                 }
             }
         }).mount()
