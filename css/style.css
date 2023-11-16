@@ -56,6 +56,7 @@
    /*Espaciados*/
 
    --spacing-128: 12.8rem;
+   --spacing-80: 8.0rem;
    --spacing-68: 6.8rem;
    --spacing-48: 4.8rem;
    --spacing-36: 3.6rem;
@@ -104,8 +105,12 @@ img {
 }
 
 .container {
-   max-width: 1200px;
+   max-width: 75%;
    margin: 0 auto;
+   
+}
+#option{
+   font-size: 1em;
 }
 
 /*Fin Normalización*/
@@ -389,7 +394,7 @@ header {
 /*-------------------------------------------------------------------------------------*/
 
  /*ESTILOS EDIT*/
- .form__edit form{
+ /* .form__edit form{
    display: grid;
    width: 830px;
    grid-template-columns: repeat(12 1fr);
@@ -481,18 +486,18 @@ header {
  figcaption{
    text-align: center;
    font-size: var(--font-small);
- }
+ } */
 /*-------------------------------------------------------------------------------------*/
 
 /*ESTILOS CREATE*/
 
 .form__create form {
    display: grid;
-   width: 830px;
-   grid-template-columns: repeat(12 1fr);
+   width: 85%;
+   grid-template-columns: 20% 15% 20% 20% 25%;
    grid-template-rows: repeat(7 1fr);
 }
-
+ 
 .form__create, .form__register, 
 .form__contacto, .form__login,
 .form__edit, form > * {
@@ -556,31 +561,31 @@ header {
 }
 
 .form__create form .oneline {
-   grid-column: 1 / 13;
+   grid-column: 1 / 6;
 }
 
 .select__categoria {
-   grid-column: 1 / 6;
-   margin-right: 30px;
+   grid-column: 1 / 4;
+
 }
 
 .select__licencia {
-   grid-column: 6 / 13;
-   margin-left: 30px;
+   grid-column: 4 / 6;
+   
 }
 
 .sku__item {
-   grid-column: 1 / 4;
+   grid-column: 1 / 3;
    grid-row: 5;
 }
 
 .precio__item {
-   grid-column: 4 / 8;
+   grid-column: 3 / 5;
    grid-row: 5;
 }
 
 .stock__item {
-   grid-column: 8 / 13;
+   grid-column: 5 /6 ;
    grid-row: 5;
 }
 
@@ -590,7 +595,8 @@ header {
 
 .descuento__item {
    grid-column: 1 / 3;
-   padding: var(--spacing-12);
+   grid-row: 6;
+   padding: var(--spacing-12) 0;
 }
 
 .descuento__item input {
@@ -598,7 +604,7 @@ header {
 }
 
 .cuota__item {
-   grid-column: 3 / 10;
+   grid-column: 3 / 6;
    padding: var(--spacing-12);
    margin-left: var(--spacing-12);
 }
@@ -1094,6 +1100,7 @@ article {
    width: 100%;
 }
 /*-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
 
 /*DISEÑO RESPONSIVE*/
 
@@ -1102,8 +1109,9 @@ article {
    display: none;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 950px){
+@media only screen and (min-width: 992px){
 
+   /*INDEX*/
    /*Responsive Header*/
    .navbar__menu{
       gap: 0.2em;  
@@ -1115,7 +1123,7 @@ article {
       max-width: 250px;
    } 
    header{
-      padding: var(--spacing-28);
+      padding: var(--spacing-28) var(--spacing-128);
 }
 /*Responsive Cards*/
 .collection__img {
@@ -1136,20 +1144,59 @@ article {
    padding: var(--spacing-12) var(--spacing-20);
    margin-top: var(--spacing-8); 
 }
-/*Rsponsive Footer*/
+/*Responsive Footer*/
 .footer__logo img{
    width: 10em;
  }
+/*.............................................................................*/
+ /*RESPONSIVE CREATE*/
 
+ .form__create form {
+   display: grid;
+   width: 100%;
+   grid-template-columns: 20% 15% 15% 25% 25%  ;
+   grid-template-rows: repeat(7 1fr);
 }
+
+.select__licencia {
+   grid-column: 4 / 7;
+   
+}
+.nom__producto .input__item {
+   width: 18em;
+   text-align: center;
+}
+
+.input__sku{
+   width: 8em;
+}
+.input__precio{
+   width: 8em;
+}
+.cuota__item {
+   grid-column: 3 / 7;
+}
+.select__item {
+   width: 200px;
+}
+
+.cuota__item {
+   padding: var(--spacing-12) 0;
+   margin-left: 0;
+}
+}
+
+/*----------------------------------------------------------------------------------*/
+
 /*RESPONSIVE TABLET*/
 
-@media only screen and (min-width: 460px) and (max-width: 768px){
-  
+@media only screen and (min-width: 768px) and (max-width: 992px){
+ 
+   /*INDEX*/
 /*Responsive Header*/
 
-   header{
-      padding: var(--spacing-28);
+header{
+   padding: var(--spacing-28) var(--spacing-80);
 }
    .navbar__logo {
       max-width: 200px;
@@ -1256,10 +1303,14 @@ article {
    .navbar{
       display: flex ;
       flex-direction: column;
+      text-align: center;
    }
 
    .navbar li {
       display: inline;
+   }
+   .navbar__link {
+      padding: var(--spacing-8);
    }
 
    .footer picture{
@@ -1275,16 +1326,70 @@ article {
       order:-1;
       margin-bottom: var(--spacing-20);
  }
- 
+/*..............................................................*/
+ /*CREATE*/
+.form__create form {
+   display: grid;
+   width: 80vw;
+   grid-template-columns: 20% 15% 15% 20% 30%;
+   grid-template-rows: repeat(7 1fr);
+   margin: auto;
 }
 
-/**RESPONSIVE CELULAR*/
+.admin__title {
+   font-size: var(--font-xlarge);
+}
+.form__create form .label__select {
+   font-size: var(--font-medium);
+   font-weight: 400;
+}
+.select__item {
+   width: 160px;
+}
 
-@media only screen and (max-width: 460px){
+.label__input {
+   font-size: var(--font-medium);
+}
+.nom__producto .input__item {
+   width: 18em;
+   text-align: center;
+}
+.input__sku{
+   width: 8em;
+}
+.input__precio{
+   width: 8em;
+}
 
+.select__item__cuota {
+   width: 16em;
+}
+
+.cuota__item {
+   padding: 0;
+   margin-left: 0;
+}
+
+/* .form__create form {
+   text-align: center;
+} */
+.btn{
+   margin: var(--spacing-12) var(--spacing-28) ;
+}
+.btn__create{
+   text-align: center;
+}
+ 
+}
+/*------------------------------------------------------------------------------------*/
+/**RESPONSIVE CELULAR**/
+
+@media only screen and (min-width: 500px) and (max-width: 768px){
+
+   /*INDEX*/
    /*Responsive Header*/
    header{
-      padding: var(--spacing-28) var(--spacing-28) var(--spacing-28) var(--spacing-12);
+      padding: var(--spacing-36);
    }
 
    .navbar__logo {
@@ -1423,9 +1528,10 @@ article {
    .navbar{
       display: flex ;
       flex-direction: column;
+      text-align: center;
    }
 
-   .navbar li {
+   .navbar__li {
       display: inline;
    }
 
@@ -1442,5 +1548,274 @@ article {
       order:-1;
       margin-bottom: var(--spacing-20);
  }
+ /*..............................................................*/
+ /*CREATE*/
 
+ .form__create form >*{
+   text-align: center;
+   
+}
+ .form__create form {
+   display: grid;
+   width: 70vw;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: repeat(9 1fr);
+   margin: auto;
+}
+.admin__title {
+   font-size: var(--font-large);
+}
+.form__create form .oneline,
+.select__categoria,
+.select__licencia,
+.cuota__item,
+.nom__producto {
+   grid-column: 1 / 3;
+}
+.sku__item {
+   grid-column: 1 / 2;
+   grid-row: 6;
+}
+.stock__item {
+   grid-column: 2/3 ;
+   grid-row: 6;
+}
+
+.precio__item {
+   grid-column: 1 / 2;
+   grid-row: 7;
+   padding: var(--spacing-12) 0;
+}
+.descuento__item {
+   grid-column: 2 / 3;
+   grid-row: 7;
+   padding: var(--spacing-12) 0;
+}
+.form__create form .label__select {
+   font-size: var(--font-medium);
+   font-weight: 500;
+}
+
+.label__input {
+   font-size: var(--font-medium);
+}
+.select__item {
+   width: 140px;
+}
+.nom__producto .input__item {
+   margin-top: var(--spacing-8);
+   width: 18em;
+}
+.input__item {
+   text-align: center;
+}
+
+.input__sku{
+   width: 7em;
+}
+.input__precio{
+   width: 7em;
+}
+.select__item__cuota {
+   width: 14em;
+}
+.textarea__descripcion{
+   /* margin: 0 var(--spacing-20); */
+   padding: var(--spacing-8);
+}
+input[type="file"]{
+   font-size: 1em;
+   margin-left: var(--spacing-8);
+}
+.btn{
+   margin: var(--spacing-12) var(--spacing-28) ;
+}
+.btn__create{
+   text-align: center;
+}
+}
+
+
+/*RESPONSIVE CEL SMALL*/
+
+@media only screen and (max-width: 500px){
+
+   /*Responsive Header*/
+   header{
+      padding: var(--spacing-28);
+   }
+
+   .navbar__logo {
+      max-width: 200px;  
+   }
+   .navbar__link{
+      font-size: var(--font-xsmall);
+      padding: var(--spacing-8);
+   }
+   .menu-abrir{
+      margin-right: .4em;
+   }
+   .menu-abrir,
+   .menu-cerrar {
+      display: block;
+      border: none;
+      font-size: var(--font-large);
+      background-color: transparent;
+      cursor: pointer;
+      color: var(--light-solid);
+   } 
+   .nav{
+      opacity: 0;
+      visibility: hidden; /*Oculta el menú*/
+   
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+      position: absolute;
+      top: 3.2em;
+      right: 0;
+      background-color: var(--mode-dark-solid);
+      padding: 2em;
+      z-index: 3;
+   }
+
+   .nav.visible{
+      opacity: 1;
+      visibility: visible; 
+   }
+   .navbar__menu{
+      flex-direction: column;
+   }
+    /*Responsive Footer*/
+
+    .footer {
+      padding: var(--spacing-36);
+   }
+   .navbar{
+      display: flex ;
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .navbar__link{
+      font-size: 1em;
+      padding: .3em;
+   }
+
+   .footer picture{
+      width: 8em;
+   }
+   .footer__copy {
+      font-size: 1em;
+      text-align: center;
+      margin-top: var(--spacing-12);
+   }
+
+   .navbar picture:nth-of-type(1){
+      order:-1;
+      margin-bottom: var(--spacing-20);
+ }
+ /*.........................................................................*/
+ /*CREATE*/
+
+   .form__create form >*{
+      text-align: center;
+      padding: var(--spacing-8);
+      margin: var(--spacing-8) 0;
+     
+   }
+   .form__create form {
+      display: grid;
+      width: 70vw;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(9 1fr);
+      margin: auto;
+   }
+
+   .form__create form .oneline,
+   .select__categoria,
+   .select__licencia,
+   .cuota__item,
+   .nom__producto{
+      grid-column: 1/3;
+   }
+
+   .admin__title{
+      font-size: var(--font-medium2);
+   }
+   .form__create form .label__select {
+      font-size: var(--font-xsmall);
+      font-weight: 500;
+   }
+   
+   .label__input {
+      font-size: var(--font-xsmall);
+      font-weight: 400;
+   }
+   .sku__item {
+      grid-column: 1 / 2;
+      grid-row: 6;
+   }
+   .stock__item {
+      grid-column: 2/3 ;
+      grid-row: 6;
+   }
+   
+   .precio__item {
+      grid-column: 1 / 2;
+      grid-row: 7;
+      padding: var(--spacing-12) 0;
+   }
+   .descuento__item {
+      grid-column: 2 / 3;
+      grid-row: 7;
+      padding: var(--spacing-12) 0;
+   }
+   .select__item {
+      width: 140px;
+      padding: .2em;
+      font-size: var(--font-xsmall);
+   }
+   .input__item {
+      font-size: 1.2em;
+      text-align: center;
+   }
+   .nom__producto .input__item {
+      margin-top: var(--spacing-8);
+      width: 18em;
+   }
+   
+   .input__sku{
+      width: 7em;
+   }
+   .input__precio{
+      width: 7em;
+   }
+   .select__item__cuota {
+      width: 12em;
+      padding: .3em;
+      margin-left: .3em;
+      font-size: 1.2em;
+   }
+   
+   .textarea__descripcion{
+      padding: var(--spacing-8);
+      height: var(--spacing-128);
+   }
+   input[type="file"]{
+      font-size: 1em;
+      margin-left: var(--spacing-8);
+      margin-top: var(--spacing-12);
+   }
+   .btn{
+      margin: var(--spacing-8) var(--spacing-16) ;
+      padding: 0;
+      font-size: 1.2em;
+      width: 10em;
+      height: 3em;
+   }
+   .btn__create{
+      text-align: center;
+   }
+  
 }
