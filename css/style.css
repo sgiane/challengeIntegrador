@@ -723,6 +723,10 @@ input[type="file"] {
    margin-left: 2em;
 }
 
+.input__recordar{
+   width: 6%;
+}
+
 .label__recordar {
    font-size: var(--font-small);
    margin-left: var(--spacing-8);
@@ -1916,6 +1920,10 @@ article {
       margin-left: 2em;
    }
 
+   .input__recordar{
+      width: 6%;
+   }
+
    /* RESPONSIVE CONTACTO */
 
    .title__contacto {
@@ -2212,7 +2220,8 @@ article {
    /* RESPONSIVE LOGIN*/
 
    .form__login form {
-      
+      display: flex;
+      flex-direction: column;
       width: 100%;
       grid-template-columns: 15% 30% 40% 15%;
       margin: 0;
@@ -2228,10 +2237,15 @@ article {
 
    .input__login {
       width: 100%;
+      margin: 0%;
+   }
+
+   .input__recordar{
+      width: 6%;
    }
 
    .label__recordar {
-      font-size: 8px;
+      font-size: var(--font-xsmall);
    }
 
    .recuperar {
