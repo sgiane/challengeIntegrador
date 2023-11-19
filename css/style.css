@@ -2154,7 +2154,6 @@ article {
 
    /* RESPONSIVE REGISTER */
 
-
    .form__register form {
       display: flex;
       flex-direction: column;
@@ -2212,7 +2211,8 @@ article {
 
    /* RESPONSIVE LOGIN*/
 
-   --- .form__login form {
+   .form__login form {
+      
       width: 100%;
       grid-template-columns: 15% 30% 40% 15%;
       margin: 0;
@@ -2238,7 +2238,7 @@ article {
       font-size: 10px;
    }
 
-   /* rEsponsive contacto */
+   /* RESPONSIVE CONTACTO */
 
    .title__contacto {
       margin: 0;
