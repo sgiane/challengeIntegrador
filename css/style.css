@@ -792,6 +792,7 @@ input[type="file"] {
 }
 
 .input__terminos {
+   width: 4%;
    margin-left: 2em;
 }
 
@@ -1519,9 +1520,18 @@ article {
    padding: var(--spacing-20);
 }
 
+.register__title {
+   font-size: var(--font-jumbo);
+}
+
+.register__subtitulo{
+font-size: var(--font-large);
+}
+
 .input__register {
    width: 350px;
 }
+
 
 .label__register {
    height: 10px;
@@ -1532,13 +1542,16 @@ article {
    display: flex;
    flex-direction: column;
    grid-column: 2/ 3;
-   width: 18em;
+   width: 20em;
 }
 
 .reg-btn {
    margin: 0;
 }
-
+.terminos{
+   width: 28em;
+   padding-top: 10%;
+}
 .label__terminos {
    font-size: var(--font-xsmall);
    font-weight: 500;
