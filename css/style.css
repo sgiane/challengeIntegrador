@@ -737,6 +737,7 @@ input[type="file"] {
    font-size: var(--font-xsmall);
    color: var(--blue-solid);
    grid-column: 1/5;
+   margin: 0;
 }
 
 /*-------------------------------------------------------------------------------------*/
@@ -798,6 +799,10 @@ input[type="file"] {
 
 .label__terminos span {
    color: var(--blue-solid);
+}
+
+.terminos{
+   width: 100%;
 }
 
 /*-------------------------------------------------------------------------------------*/
@@ -1453,7 +1458,7 @@ article {
    
 
    /*..............................................................*/
-   /*CREATE*/
+   /* RESPONSIVE CREATE */
    .form__create form {
       display: grid;
       width: 80vw;
@@ -1550,7 +1555,11 @@ font-size: var(--font-large);
 }
 .terminos{
    width: 28em;
-   padding-top: 10%;
+   padding-top: 5%;
+}
+
+.input__terminos{
+   width: 3%;
 }
 .label__terminos {
    font-size: var(--font-xsmall);
