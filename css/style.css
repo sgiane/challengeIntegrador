@@ -108,9 +108,10 @@ img {
    max-width: 75%;
    margin: 0 auto;
 
+
 }
 
-#option {
+option {
    font-size: 1em;
 }
 
@@ -400,121 +401,6 @@ header {
 
 /*-------------------------------------------------------------------------------------*/
 
-/*ESTILOS EDIT*/
-.form__edit form {
-   display: grid;
-   width: 830px;
-   grid-template-columns: repeat(12 1fr);
-   grid-template-rows: repeat(7 1fr);
-}
-
-.form__edit form .input__item {
-   padding: .3em;
-   border: none;
-   border-bottom: 1px solid var(--red-solid);
-   font-family: var(--font-base);
-   font-size: var(--font-medium);
-}
-
-.form__edit form .label__select {
-   font-family: var(--font-base);
-   font-size: var(--font-large);
-   font-weight: 300;
-}
-
-.form__edit form .label__input {
-   font-size: var(--font-large);
-   font-weight: 400;
-}
-
-.form__edit form .oneline {
-   width: 100%;
-   grid-column: 1 / 13;
-}
-
-.select__categoria {
-   grid-column: 1 / 6;
-   margin-right: 30px;
-}
-
-.select__licencia {
-   grid-column: 6 / 13;
-   margin-left: 30px;
-}
-
-.nom__producto input {
-   width: 16em;
-}
-
-form .sku__item {
-   grid-column: 1 / 3;
-   grid-row: 5;
-}
-
-.sku__item input {
-   width: 7em;
-}
-
-form .precio__item {
-   grid-column: 3 / 6;
-   grid-row: 5;
-}
-
-.precio__item input {
-   width: 6em;
-}
-
-form .stock__item {
-   grid-column: 6 / 13;
-   grid-row: 5;
-}
-
-form .stock__item input {
-   width: 3em;
-}
-
-.descuento__item {
-   grid-column: 1 / 3;
-}
-
-form .descuento__item input {
-   width: 3em;
-}
-
-.cuota__item {
-   grid-column: 3 / 10;
-}
-
-.textarea__descripcion {
-   width: 100%;
-   height: 8em;
-   border-radius: 0.5em;
-   padding: 0.2em;
-   font-family: var(--font-base);
-}
-
-.descripcion textarea {
-   font-size: var(--font-large);
-}
-
-.imagenes__edit {
-   display: flex;
-   grid-column: 1/13;
-}
-
-.figure__edit {
-   width: 15em;
-   border-bottom: 1px solid var(--red-solid);
-   margin-right: 5em;
-}
-
-figcaption {
-   text-align: center;
-   font-size: var(--font-small);
-}
-
-/*-------------------------------------------------------------------------------------*/
-
 /*ESTILOS CREATE*/
 
 .form__create form {
@@ -619,7 +505,7 @@ form>* {
 }
 
 .stock__item input {
-   width: 40px;
+   width: 4em;
 }
 
 .descuento__item {
@@ -629,7 +515,7 @@ form>* {
 }
 
 .descuento__item input {
-   width: 40px;
+   width: 4em;
 }
 
 .cuota__item {
@@ -723,7 +609,8 @@ input[type="file"] {
    margin-left: 2em;
 }
 
-.input__recordar{
+
+.input__recordar {
    width: 6%;
 }
 
@@ -797,13 +684,15 @@ input[type="file"] {
    margin-left: 2em;
 }
 
+
 .label__terminos span {
    color: var(--blue-solid);
 }
 
-.terminos{
+.terminos {
    width: 100%;
 }
+
 
 /*-------------------------------------------------------------------------------------*/
 
@@ -1012,6 +901,7 @@ footer {
    padding: 0.3em 0;
 }
 
+
 input[type=checkbox] {
    transform: scale(1.5);
 }
@@ -1168,7 +1058,6 @@ article {
    border: none;
    font-weight: bold;
    font-size: var(--font-large);
-   ;
 }
 
 .resumen .valor_resumen {
@@ -1190,7 +1079,7 @@ article {
 /*-------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------*/
 
-/*DISEÑO RESPONSIVE*/
+/*-----------------------DISEÑO RESPONSIVE--------------------------*/
 
 .menu-abrir,
 .menu-cerrar {
@@ -1253,14 +1142,25 @@ article {
       grid-template-rows: repeat(7 1fr);
    }
 
-   .select__licencia {
-      grid-column: 4 / 7;
-
-   }
-
    .nom__producto .input__item {
       width: 18em;
       text-align: center;
+   }
+
+   .input__sku {
+      width: 8em;
+   }
+
+   .input__precio {
+      width: 8em;
+   }
+
+   .cuota__item {
+      grid-column: 3 / 6;
+   }
+
+   .select__item {
+      width: 200px;
    }
 
    .input__sku {
@@ -1286,18 +1186,19 @@ article {
 
    /* RESPONSIVE CONTACTO */
 
-   .title__contacto{
+   .title__contacto {
       margin: 0;
    }
 
-   .contacto__nombre{
-      margin: 0;
-   }
-   .contacto__apellido{
+   .contacto__nombre {
       margin: 0;
    }
 
-   .contacto__email{
+   .contacto__apellido {
+      margin: 0;
+   }
+
+   .contacto__email {
       margin: 0;
    }
 
@@ -1306,6 +1207,51 @@ article {
    .admin__title {
       font-family: var(--font-alternativa);
       font-size: var(--font-jumbo);
+   }
+
+   /*..............................................................*/
+   /*EDIT*/
+
+   .form__edit form {
+      display: grid;
+      width: 80vw;
+      grid-template-columns: 20% 15% 15% 20% 30%;
+      grid-template-rows: repeat(7 1fr);
+      margin: auto;
+   }
+
+   .form__edit form .oneline,
+   .nom__producto-edit,
+   .edit__title,
+   .btn__edit {
+      grid-column: 1/6;
+   }
+
+   .edit__title {
+      font-size: var(--font-xlarge);
+   }
+
+   .label__input,
+   .label__edit {
+      font-size: var(--font-medium);
+   }
+
+   .form__edit form .input__precio {
+      width: 8em;
+   }
+
+   .input__item {
+      text-align: center;
+   }
+
+   .form__edit .imagenes__edit {
+      display: flex;
+      grid-column: 1/3;
+      text-align: center;
+   }
+
+   .btn__edit {
+      margin: 0;
    }
 }
 
@@ -1463,8 +1409,6 @@ article {
       margin-bottom: var(--spacing-20);
    }
 
-   
-
    /*..............................................................*/
    /* RESPONSIVE CREATE */
    .form__create form {
@@ -1505,6 +1449,7 @@ article {
       width: 8em;
    }
 
+
    .select__item__cuota {
       width: 16em;
    }
@@ -1514,9 +1459,6 @@ article {
       margin-left: 0;
    }
 
-   /* .form__create form {
-   text-align: center;
-} */
    .btn {
       margin: var(--spacing-12) var(--spacing-28);
    }
@@ -1525,59 +1467,108 @@ article {
       text-align: center;
    }
 
-/* RESPONSIVE REGISTER*/
+   /*................................................................*/
+   /*EDIT*/
 
-.form__register form {
+   .form__edit form {
+      display: grid;
+      width: 80vw;
+      grid-template-columns: 20% 15% 15% 20% 30%;
+      grid-template-rows: repeat(7 1fr);
+      margin: auto;
+   }
+
+   .form__edit form .oneline,
+   .nom__producto-edit,
+   .edit__title,
+   .btn__edit {
+      grid-column: 1/6;
+   }
+
+   .edit__title {
+      font-size: var(--font-xlarge);
+   }
+
+   .label__input,
+   .label__edit {
+      font-size: var(--font-medium);
+   }
+
+   .form__edit form .input__precio {
+      width: 8em;
+   }
+
+   .input__item {
+      text-align: center;
+   }
+
+   .form__edit .imagenes__edit {
+      display: flex;
+      grid-column: 1/3;
+      text-align: center;
+   }
+
+   .btn__edit {
+      margin: 0;
+   }
+
+
+   /*................................................................*/
+   /* RESPONSIVE REGISTER*/
+
+   .form__register form {
    grid-template-columns: 150px 450px;
    grid-template-columns: auto;
    padding: var(--spacing-20);
-}
+   }
 
-.register__title {
-   font-size: var(--font-jumbo);
-}
+   .register__title {
+      font-size: var(--font-jumbo);
+   }
 
-.register__subtitulo{
-font-size: var(--font-large);
-}
+   .register__subtitulo {
+      font-size: var(--font-large);
+   }
 
-.input__register {
-   width: 350px;
-}
+   .input__register {
+      width: 350px;
+   }
 
 
-.label__register {
-   height: 10px;
-   margin: 0;
-}
+   .label__register {
+      height: 10px;
+      margin: 0;
+   }
 
-.register__btn {
-   display: flex;
-   flex-direction: column;
-   grid-column: 2/ 3;
-   width: 20em;
-}
+   .register__btn {
+      display: flex;
+      flex-direction: column;
+      grid-column: 2/ 3;
+      width: 20em;
+   }
 
-.reg-btn {
-   margin: 0;
-}
-.terminos{
-   width: 28em;
-   padding-top: 5%;
-}
+   .reg-btn {
+      margin: 0;
+   }
 
-.input__terminos{
-   width: 3%;
-}
-.label__terminos {
-   font-size: var(--font-xsmall);
-   font-weight: 500;
-   padding-left: 0.4em;
-}
+   .terminos {
+      width: 28em;
+      padding-top: 5%;
+   }
 
-.label__terminos span {
-   color: var(--blue-solid);
-}
+   .input__terminos {
+      width: 3%;
+   }
+
+   .label__terminos {
+      font-size: var(--font-xsmall);
+      font-weight: 500;
+      padding-left: 0.4em;
+   }
+
+   .label__terminos span {
+      color: var(--blue-solid);
+   }
 
    /* RESPONSIVE CONTACTO */
 
@@ -1717,6 +1708,7 @@ font-size: var(--font-large);
       align-items: center;
    }
 
+
    .collection__img {
       width: 30em;
    }
@@ -1771,6 +1763,12 @@ font-size: var(--font-large);
       padding: var(--spacing-24);
    }
 
+   .navbar {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+
    .navbar__link {
       font-size: 12px;
       padding: var(--spacing-8);
@@ -1786,13 +1784,16 @@ font-size: var(--font-large);
       margin-top: var(--spacing-12);
    }
 
+   .navbar picture:nth-of-type(1) {
+      order: -1;
+      margin-bottom: var(--spacing-20);
+   }
 
    /*..............................................................*/
-   /* Responsive CREATE*/
+   /*CREATE*/
 
    .form__create form>* {
       text-align: center;
-
    }
 
    .form__create form {
@@ -1825,6 +1826,7 @@ font-size: var(--font-large);
       grid-row: 6;
    }
 
+
    .precio__item {
       grid-column: 1 / 2;
       grid-row: 7;
@@ -1847,7 +1849,7 @@ font-size: var(--font-large);
    }
 
    .select__item {
-      width: 140px;
+      width: 16em;
    }
 
    .nom__producto .input__item {
@@ -1857,6 +1859,97 @@ font-size: var(--font-large);
 
    .input__item {
       text-align: center;
+   }
+
+
+
+   .input__sku {
+      width: 7em;
+   }
+
+   .input__precio {
+      width: 7em;
+   }
+
+   .select__item__cuota {
+      width: 14em;
+   }
+
+   .textarea__descripcion {
+      padding: var(--spacing-8);
+   }
+
+   input[type="file"] {
+      font-size: 1em;
+      margin-left: var(--spacing-8);
+   }
+
+   .btn {
+      margin: var(--spacing-12) var(--spacing-28);
+   }
+
+   .btn__create {
+      text-align: center;
+   }
+
+   /*------------------------------------------------------------------------------------*/
+   /*EDIT*/
+
+   .form__edit form>* {
+      text-align: center;
+      padding: var(--spacing-8);
+      margin: var(--spacing-8) 0;
+
+   }
+
+   .form__edit form {
+      display: grid;
+      width: 70vw;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(9 1fr);
+      margin: auto;
+   }
+
+   .form__edit form .oneline,
+   .select__cat-edit,
+   .select__lic-edit,
+   .cuota__item-edit,
+   .nom__producto-edit,
+   .btn__edit {
+      grid-column: 1/3;
+   }
+
+   .form__edit .imagenes__edit {
+      margin: auto;
+      grid-column: 1/3;
+      text-align: center;
+   }
+
+   .edit__title {
+      font-size: var(--font-medium2);
+   }
+
+   .form__edit form .label__edit {
+      font-size: var(--font-xsmall);
+      font-weight: 500;
+   }
+
+   .form__edit .input__stock {
+      margin-left: var(--spacing-8);
+   }
+
+   .imagenes__edit {
+      display: flex;
+      text-align: center;
+      width: 15em;
+   }
+
+   .btn__edit {
+      text-align: center;
+   }
+
+   .precio__item-edit input {
+      width: 6em;
    }
 
    .input__sku {
@@ -1872,7 +1965,6 @@ font-size: var(--font-large);
    }
 
    .textarea__descripcion {
-      /* margin: 0 var(--spacing-20); */
       padding: var(--spacing-8);
    }
 
@@ -1956,7 +2048,7 @@ font-size: var(--font-large);
       margin-left: 2em;
    }
 
-   .input__recordar{
+   .input__recordar {
       width: 6%;
    }
 
@@ -1991,29 +2083,29 @@ font-size: var(--font-large);
 
    /* RESPONSIVE ADMIN */
 
-   
-   .admin__title{
+
+   .admin__title {
       font-size: var(--font-medium2);
       margin: 0 0 8px 0;
       font-weight: 700;
       margin-right: var(--spacing-20);
    }
-   
-   .admin__add{
-      font-size:0.7em;
+
+   .admin__add {
+      font-size: 0.7em;
    }
 
    .admin__add img {
       width: 20px;
    }
-   
-   .admin__table{
+
+   .admin__table {
       font-size: var(--font-medium);
       margin: var(--spacing-24) 0;
    }
-   
-   
-   .admin__section{
+
+
+   .admin__section {
       margin: 0 0 20px 0;
    }
 }
@@ -2029,7 +2121,7 @@ font-size: var(--font-large);
    }
 
    .navbar__logo {
-      max-width: 200px;
+      max-width: 18em;
    }
 
    .navbar__link {
@@ -2040,6 +2132,7 @@ font-size: var(--font-large);
    .menu-abrir {
       margin-right: .4em;
    }
+
 
    .menu-abrir,
    .menu-cerrar {
@@ -2076,10 +2169,104 @@ font-size: var(--font-large);
       flex-direction: column;
    }
 
+   /*Responsive Banner*/
+
+   .banner {
+      padding: var(--spacing-36);
+   }
+
+   .banner__content {
+      align-items: center;
+   }
+
+   .banner__title {
+      font-size: var(--font-small);
+      text-align: center;
+   }
+
+   .banner__subtitle {
+      font-size: var(--font-xsmall);
+      text-align: center;
+   }
+
+   .banner__link {
+      font-size: var(--font-xsmall);
+      padding: var(--spacing-8) var(--spacing-28);
+      margin-top: var(--spacing-8);
+   }
+
+   /*Reponsive Cards*/
+
+   .collection {
+      display: flex;
+      flex-direction: column;
+      padding: var(--spacing-16) 0;
+   }
+
+   .collection picture:nth-of-type(1) {
+      order: -1;
+      margin-top: var(--spacing-20);
+   }
+
+   .collection__item {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-24);
+      text-align: center;
+      align-items: center;
+   }
+
+   .collection__img {
+      width: 20em;
+   }
+
+   .collection__title {
+
+      font-size: var(--font-medium2);
+      font-weight: 600;
+   }
+
+   .collection__description {
+      font-size: var(--font-small);
+      font-weight: 500;
+   }
+
+   .collection__link {
+      font-size: var(--font-xsmall);
+      padding: var(--spacing-8) var(--spacing-16);
+      margin-top: var(--spacing-12);
+
+   }
+
+   /*Responsive Slider*/
+   .slider {
+      margin-bottom: var(--spacing-20);
+   }
+
+   .slider__title {
+      font-size: var(--font-large);
+      text-align: center;
+      padding: 0 var(--spacing-20);
+   }
+
+   .card-item__content {
+      text-align: center;
+   }
+
+   .card-item__img {
+      width: 20em;
+      margin: auto
+   }
+
+   .card-item__tag {
+      font-size: 1.2em;
+      padding: .5em;
+   }
+
    /*Responsive Footer*/
 
    .footer {
-      padding: var(--spacing-24);
+      padding: var(--spacing-36);
    }
 
    .navbar {
@@ -2121,7 +2308,7 @@ font-size: var(--font-large);
    .form__create form {
       display: grid;
       width: 70vw;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 50% 50%;
       grid-template-rows: repeat(9 1fr);
       margin: auto;
    }
@@ -2171,9 +2358,11 @@ font-size: var(--font-large);
    }
 
    .select__item {
-      width: 140px;
+      width: 12em;
       padding: .2em;
       font-size: var(--font-xsmall);
+      margin: 0;
+      text-align: center;
    }
 
    .input__item {
@@ -2184,6 +2373,10 @@ font-size: var(--font-large);
    .nom__producto .input__item {
       margin-top: var(--spacing-8);
       width: 18em;
+   }
+
+   .form__create .input__stock {
+      margin-left: var(--spacing-8);
    }
 
    .input__sku {
@@ -2223,6 +2416,68 @@ font-size: var(--font-large);
    .btn__create {
       text-align: center;
    }
+
+   /*------------------------------------------------------------------------------------*/
+   /*EDIT*/
+
+   .form__edit form>* {
+      text-align: center;
+      padding: var(--spacing-8);
+      margin: var(--spacing-8) 0;
+
+   }
+
+   .form__edit form {
+      display: grid;
+      width: 70vw;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(9 1fr);
+      margin: auto;
+   }
+
+   .form__edit form .oneline,
+   .select__cat-edit,
+   .select__lic-edit,
+   .cuota__item-edit,
+   .nom__producto-edit,
+   .btn__edit {
+      grid-column: 1/3;
+   }
+
+   .form__edit .imagenes__edit {
+      margin: auto;
+      grid-column: 1/3;
+      text-align: center;
+   }
+
+   .edit__title {
+      font-size: var(--font-medium2);
+   }
+
+   .form__edit form .label__edit {
+      font-size: var(--font-xsmall);
+      font-weight: 500;
+   }
+
+   .form__edit .input__stock {
+      margin-left: var(--spacing-8);
+
+   }
+   .imagenes__edit {
+      display: flex;
+      text-align: center;
+      width: 15em;
+   }
+
+   .btn__edit {
+      text-align: center;
+   }
+
+   .precio__item-edit input {
+       width: 6em;
+   }
+
+
 
    /* RESPONSIVE REGISTER */
 
@@ -2304,7 +2559,7 @@ font-size: var(--font-large);
       margin: 0%;
    }
 
-   .input__recordar{
+   .input__recordar {
       width: 6%;
    }
 
@@ -2346,43 +2601,43 @@ font-size: var(--font-large);
       width: 100%;
    }
 
-/* RESPONSIVE ADMIN */
+   /* RESPONSIVE ADMIN */
 
-.img__lupa{
-   width: 12%;
-}
+   .img__lupa {
+      width: 12%;
+   }
 
-.admin__input{
-   width: 81%;
-}
+   .admin__input {
+      width: 81%;
+   }
 
-.admin__title{
-   font-size: var(--font-medium);
-   margin: 0 0 20px 0;
-   font-weight: 700;
-}
+   .admin__title {
+      font-size: var(--font-medium);
+      margin: 0 0 20px 0;
+      font-weight: 700;
+   }
 
-.admin__add{
-   font-size:0.6em;
-}
+   .admin__add {
+      font-size: 0.6em;
+   }
 
-.admin__add img {
-   width: 20px;
-}
+   .admin__add img {
+      width: 20px;
+   }
 
-.admin__table{
-   font-size: var(--font-medium);
-   margin: var(--spacing-24) 0;
-}
+   .admin__table {
+      font-size: var(--font-medium);
+      margin: var(--spacing-24) 0;
+   }
 
-.admin__encabezado{
-   display: flex;
-   flex-direction: column;
-   font-weight: 500;
-}
+   .admin__encabezado {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+   }
 
-.admin__section{
-   margin: 0 0 20px 0;
-}
+   .admin__section {
+      margin: 0 0 20px 0;
+   }
 
 }
