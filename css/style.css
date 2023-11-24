@@ -1467,12 +1467,59 @@ article {
       text-align: center;
    }
 
+   /*................................................................*/
+   /*EDIT*/
+
+   .form__edit form {
+      display: grid;
+      width: 80vw;
+      grid-template-columns: 20% 15% 15% 20% 30%;
+      grid-template-rows: repeat(7 1fr);
+      margin: auto;
+   }
+
+   .form__edit form .oneline,
+   .nom__producto-edit,
+   .edit__title,
+   .btn__edit {
+      grid-column: 1/6;
+   }
+
+   .edit__title {
+      font-size: var(--font-xlarge);
+   }
+
+   .label__input,
+   .label__edit {
+      font-size: var(--font-medium);
+   }
+
+   .form__edit form .input__precio {
+      width: 8em;
+   }
+
+   .input__item {
+      text-align: center;
+   }
+
+   .form__edit .imagenes__edit {
+      display: flex;
+      grid-column: 1/3;
+      text-align: center;
+   }
+
+   .btn__edit {
+      margin: 0;
+   }
+
+
+   /*................................................................*/
    /* RESPONSIVE REGISTER*/
 
    .form__register form {
-      grid-template-columns: 150px 450px;
-      grid-template-columns: auto;
-      padding: var(--spacing-20);
+   grid-template-columns: 150px 450px;
+   grid-template-columns: auto;
+   padding: var(--spacing-20);
    }
 
    .register__title {
@@ -2081,35 +2128,36 @@ article {
       font-size: var(--font-xsmall);
       padding: var(--spacing-8);
    }
-   .menu-abrir{
-   margin-right: .4em;
+
+   .menu-abrir {
+      margin-right: .4em;
    }
 
 
    .menu-abrir,
    .menu-cerrar {
-   display: block;
-   border: none;
-   font-size: var(--font-large);
-   background-color: transparent;
-   cursor: pointer;
-   color: var(--light-solid);
+      display: block;
+      border: none;
+      font-size: var(--font-large);
+      background-color: transparent;
+      cursor: pointer;
+      color: var(--light-solid);
    }
 
    .nav {
-   opacity: 0;
-   visibility: hidden;
-   /*Oculta el menú*/
+      opacity: 0;
+      visibility: hidden;
+      /*Oculta el menú*/
 
-   display: flex;
-   flex-direction: column;
-   gap: 3em;
-   position: absolute;
-   top: 3.2em;
-   right: 0;
-   background-color: var(--mode-dark-solid);
-   padding: 2em;
-   z-index: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+      position: absolute;
+      top: 3.2em;
+      right: 0;
+      background-color: var(--mode-dark-solid);
+      padding: 2em;
+      z-index: 3;
    }
 
    .nav.visible {
@@ -2414,22 +2462,22 @@ article {
    .form__edit .input__stock {
       margin-left: var(--spacing-8);
 
-
-      .imagenes__edit {
-         display: flex;
-         text-align: center;
-         width: 15em;
-      }
-
-      .btn__edit {
-         text-align: center;
-      }
-
-      .precio__item-edit input {
-         width: 6em;
-      }
-
    }
+   .imagenes__edit {
+      display: flex;
+      text-align: center;
+      width: 15em;
+   }
+
+   .btn__edit {
+      text-align: center;
+   }
+
+   .precio__item-edit input {
+       width: 6em;
+   }
+
+
 
    /* RESPONSIVE REGISTER */
 
