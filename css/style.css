@@ -1076,6 +1076,72 @@ article {
    width: 100%;
 }
 
+/*ESTILOS ITEM*/
+
+.item__card{
+   margin-top: var(--spacing-68);
+  }
+ .item__card-yoda {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   padding: var(--spacing-16) 0;
+  }
+  .item-card__licence{
+   font-size: var(--font-small);
+  }
+  .item-card__name{
+   font-size: var(--font-jumbo);
+  }
+  .item-card__description{
+   font-size: var(--font-large);
+  }
+  .item-card__price{
+   font-size: var(--font-jumbo);
+  }
+  .item-card__cuotas{
+   color: var(--blue-solid);
+   font-size: var(--font-small);
+   font-weight: 700;
+
+}
+  input[type=number] {
+   width: 5em;
+   padding: 0.5em;
+   border: 1px solid #b9afaf;
+   text-align: center;
+   }
+   
+  .btn-agregar{
+   padding: var(--spacing-12);
+   margin-left:1em; 
+   border: none;
+   background-color: var(--red-solid);
+   color: var(--light-solid);
+   transition: background .3s ease-in-out;
+   font-size: var(--font-xsmall);
+   font-weight: 600;
+  }
+.item-card__link{
+   text-decoration: underline;   
+}
+.item__quantity{
+   padding:  var(--spacing-8) var(--spacing-12);
+  background-color: var(--dark-solid);
+  color: var(--light-solid);
+  font-size: var(--font-medium);
+  font-weight: 700;
+}
+.input__item-num{
+   width: 4em;
+   padding: var(--spacing-12);
+   margin: var(--spacing-8);
+   font-size: var(--font-medium);
+   text-align: center;
+   border-radius: .2em;
+}
+
+
 /*-------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------*/
 
@@ -1601,6 +1667,84 @@ article {
       font-family: var(--font-alternativa);
       font-size: var(--font-large);
    }
+
+   /*...........................................................*/
+   /*ITEM*/
+
+   .item__card{
+      margin-top: var(--spacing-36) ;
+   }
+   .card-item__img{
+      width: 25em;
+      margin: 0;
+   }
+    .item__card-yoda {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      align-items: center;
+      padding: 0;
+      margin: var(--spacing-12);
+      gap: var(--spacing-20);
+     }
+     .item-card__licence{
+      font-size: var(--font-medium2);
+     }
+     .item-card__name{
+      font-size: var(--font-medium2);
+     }
+     .item-card__description{
+      font-size: var(--font-small);
+     }
+     .item-card__price{
+      font-size: var(--font-large);
+      font-weight: 500;
+     }
+     .item-card__cuotas{
+      color: var(--blue-solid);
+      font-size: var(--font-xsmall);
+      font-weight: 700;
+   
+   }
+   .card-item__content{
+      text-align: start;
+      padding-left: var(--spacing-20);
+   }
+       
+     .btn-agregar{
+      width: 11em;
+      height: 3em;
+      margin-left:1em; 
+      
+     }
+   .item-card__link{
+      text-decoration: underline;   
+   }
+   .item__quantity{
+      height: 2em;
+      padding: 0 var(--spacing-8);
+     background-color: var(--dark-solid);
+     color: var(--light-solid);
+     font-size: var(--font-medium);
+     font-weight: 700;
+   }
+   .input__item-num{
+      width: 3em;
+      height: 2em;
+      padding: .6em;
+      margin: var(--spacing-8);
+      font-size: var(--font-medium);
+      text-align: center;
+      border-radius: .2em;
+   }
+   .item__cart{
+      display: flex;
+      align-items:center ;
+   }
+
+   .slider .slider__title{
+      font-size: var(--font-large)
+   }
+
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -2108,7 +2252,50 @@ article {
    .admin__section {
       margin: 0 0 20px 0;
    }
+
+   /*.............................................................*/
+   /*ITEM*/
+   .item__card-yoda {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: var(--spacing-16) 0;
+     }
+     .item-card__licence{
+      font-size: var(--font-xsmall);
+     }
+     .item-card__name{
+      font-size: var(--font-large);
+     }
+     .item-card__description{
+      font-size: var(--font-small);
+     }
+
+     .item-card__price{
+      font-size: var(--font-medium2);
+      font-weight: 600 ;
+     }
+     .item-card__cuotas{
+      font-size: var(--font-xsmall);
+   
+   }
+   .input__item-num{
+      width: 3em;
+   }
+   .item__quantity{
+      padding:  var(--spacing-8);
+   }
+   .btn-agregar{
+      margin-left:0; 
+   }
+   .slider__item > *{
+      text-align: center;
+   }
+   .card-item__name{
+      font-size: var(--font-small);
+   }
 }
+
 
 
 /*RESPONSIVE CEL SMALL*/
@@ -2241,6 +2428,7 @@ article {
    /*Responsive Slider*/
    .slider {
       margin-bottom: var(--spacing-20);
+
    }
 
    .slider__title {
@@ -2638,6 +2826,42 @@ article {
 
    .admin__section {
       margin: 0 0 20px 0;
+   }
+
+   /*.............................................................*/
+   /*ITEM*/
+   .item__card-yoda {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: var(--spacing-16) 0;
+     }
+     .item-card__licence{
+      font-size: var(--font-xsmall);
+     }
+     .item-card__name{
+      font-size: var(--font-large);
+     }
+     .item-card__description{
+      font-size: var(--font-small);
+     }
+
+     .item-card__price{
+      font-size: var(--font-medium2);
+      font-weight: 600 ;
+     }
+     .item-card__cuotas{
+      font-size: var(--font-xsmall);
+   
+   }
+   .input__item-num{
+      width: 3em;
+   }
+   .item__quantity{
+      padding:  var(--spacing-8);
+   }
+   .btn-agregar{
+      margin-left:0; 
    }
 
 }
