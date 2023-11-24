@@ -7,6 +7,4 @@ Proyecto Integrador de curso FullStack NodeJS. Desarrollo de tienda virtual Funk
 * Stefany
 * Judit
 * Sofia
-* Sol
 * Greta
-* Pablo
