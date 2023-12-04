@@ -842,9 +842,9 @@ main {
 
 footer {
    grid-area: footer;
-}
+ }
 
-.grid-container {
+ .grid-container-shop {
    display: grid;
    grid-template-columns: 400px 2fr;
    grid-template-rows: 120px 1fr 250px;
@@ -943,25 +943,44 @@ article {
    display: flex;
    flex-wrap: wrap;
    flex: 1;
-
 }
 
 .main-containershop {
-   width: 90%;
-   margin-top: 35px;
-}
+      width: 90%; 
+     margin-top:35px;
+  }
 
-.pagination {
-   text-align: center;
+  /*paginacion*/
+ .slider-pagination.glide { 
+   display:flex;flex-direction:row;justify-content:center;}
+
+ul.pagination__items.glide__slides{ 
+   text-align:center;
    margin-top: 60px;
-   margin-bottom: 60px;
-   list-style: none;
+   margin-bottom:60px;}
+
+.glide__track-pagination {width:15%;}
+
+li.pagination__item.glide__slide {
+   flex-shrink: 0.3;
+   margin: 0 15px;
+   border: 1px solid #ccc; 
+   border-radius: 13%; 
+   padding: 8px 12px; 
+   cursor: pointer; }
+
+li.pagination__item.glide__slide:hover { color:#FF3333;
+   background-color:#FAFAFF; border: 1px solid #FF3333;}
+
+.glide__arrow--left, 
+.glide__arrow--right{ color:#919EAB;background-color:#FAFAFF ;}
+
+.glide__arrow--left:hover, 
+.glide__arrow--right:hover {
+    background-color: #EDEDED;
+    
 }
 
-.pagination li {
-   display: inline;
-   margin: 0 15px;
-}
 
 /*-------------------------------------------------------------------------------------*/
 
@@ -1198,8 +1217,10 @@ article {
       width: 10em;
    }
 
+
    /*.............................................................................*/
    /*RESPONSIVE CREATE*/
+
 
    .form__create form {
       display: grid;
@@ -1473,7 +1494,8 @@ article {
    .navbar picture:nth-of-type(1) {
       order: -1;
       margin-bottom: var(--spacing-20);
-   }
+ }
+
 
    /*..............................................................*/
    /* RESPONSIVE CREATE */
@@ -1947,8 +1969,7 @@ article {
       grid-template-rows: repeat(9 1fr);
       margin: auto;
    }
-
-   .admin__title {
+  .admin__title {
       font-size: var(--font-large);
    }
 
@@ -2294,9 +2315,71 @@ article {
    .card-item__name{
       font-size: var(--font-small);
    }
+
 }
 
+/*responsive shop*/
+header {
+   grid-area: header;
+ }
+ 
+ aside {
+   grid-area: aside;
+ }
+ 
+ main {
+   grid-area: main;
+ }
+ 
+ footer {
+   grid-area: footer;
+ }
+ 
+ .grid-container-shop {
+   display: grid;
+   grid-template-columns: 1fr; 
+   grid-template-rows: auto auto auto; 
+   grid-template-areas:
+     "header"
+     "aside"
+     "main"
+     "footer";
+ }
+ 
+ .filter__item { padding-right:50px ;
+   padding-left:50px;
+   display: flex; 
+ flex-direction:column; 
+ }
+ 
+ form{ display:flex;justify-items:center;flex-direction:row ; width:100%; }
 
+ .input__search{
+   padding:0.5em;
+   border-radius: 0.5em;
+   width: 80%; 
+ }
+ .input__price{margin-left:-1px }
+ .filter__price{display:flex;flex-direction:column;margin-left:20px;}
+ .filter__check{display:flex;flex-direction:column;width:50%;margin-left:30px;}  
+.filter__search{display:flex;flex-direction:column;justify-items:left;width:50%; }
+.filter__order{ display:flex;flex-direction:column; width:50% ;margin-left:-15px;}
+.select__order{width:80%}
+
+/*responsive main*/
+.sidebar {
+  order: -1;
+ }
+ .main__cards {
+   display: flex;
+  flex-wrap: wrap;
+
+ .main-containershop { 
+  margin-left:50px ;
+  margin-right:130px ;
+   margin-top: 35px;
+ }
+}
 
 /*RESPONSIVE CEL SMALL*/
 
@@ -2604,6 +2687,69 @@ article {
    .btn__create {
       text-align: center;
    }
+
+  
+/*responsive shop*/
+
+
+header {
+   grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.grid-container-shop {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-areas:
+   "header "
+   "aside main "
+   "main"
+  "footer ";
+ }
+
+ form{ display:grid;}
+ .filter__price{ margin-left:-150px;}
+ .filter__check{margin-left:-15px;}
+ .filter__search{margin-left:-15px;}
+/*responsive main*/
+
+.sidebar {
+   order: -1;
+  }
+
+ main {
+   padding: var(--spacing-16); 
+ }
+
+ .main__cards {
+   flex-direction: column; 
+ }
+
+ .card-1,
+ .card-2,
+ .card-3,
+ .card-4,
+ .card-5,
+ .card-6,
+ .card-7,
+ .card-8,
+ .card-9 {
+   flex:1 1 100%; 
+ }
+
+
+}
 
    /*------------------------------------------------------------------------------------*/
    /*EDIT*/
