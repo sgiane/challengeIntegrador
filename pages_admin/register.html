@@ -10,27 +10,32 @@
 <body>
     <!--Inicio Header -->
     <header>
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="../index.html">
-                    <img class="img-logo" src="../multimedia/branding/logo_light_horizontal.svg"
-                        alt="Isologotipo de la Marca funkoshop">
-                </a>
-            </picture>
+
+        <picture class="navbar__logo">
+            <a href="../index.html">
+                <img class="img-logo" src="../multimedia/branding/logo_light_horizontal.svg"
+                    alt="Isologotipo de la Marca funkoshop">
+            </a>
+        </picture>
+        <button id="abrir" class="menu-abrir"><iconify-icon icon="fa6-solid:bars"></iconify-icon></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="menu-cerrar"><iconify-icon icon="fa6-solid:bars"></iconify-icon></button>
             <ul class="navbar__menu">
-                <li class="navbar__item with__submenu">
-                    <a class="navbar__link with-icon" href="../pages_tienda/shop.html">VER TIENDA</a>
+                <li class="navbar__item">
+                    <a class="navbar__link with-icon" href="../pages_tienda/shop.html">Ver Tienda</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="./admin.html">ADMIN</a>
+                    <a class="navbar__link" href="contacto.html">CONTACTO</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="./login.html">SALIR</a>
+                    <a class="navbar__link" href="login.html">LOGIN</a>
                 </li>
             </ul>
         </nav>
+    
     </header>
-    <!--Fin Header-->
+    <!--Fin Header--> 
+    <!-- inicio register -->
     <main class="container">
         <section class="form__register">
             <h1 class="register__title">CREA TU CUENTA</h1>
@@ -38,56 +43,60 @@
 
             <form action="" method="post">
 
-                <label class="label__input" for="name">Nombre:</label>
-                <input class="input__item" type="text" name="nombre" placeholder="Nombre" required>
+                <label class="label__input label__register" for="name">Nombre:</label>
+                <input class="input__item input__register" type="text" name="nombre" placeholder="Nombre" required>
 
-                <label class="label__input" for="apellido">Apellido:</label>
-                <input class="input__item" type="text" name="apellido" placeholder="Apellido" required>
+                <label class="label__input label__register" for="apellido">Apellido:</label>
+                <input class="input__item input__register" type="text" name="apellido" placeholder="Apellido" required>
 
-                <label class="label__input" for="email">Email:</label>
-                <input class="input__item" type="email" name="email" id="" placeholder="Email" required>
+                <label class="label__input label__register" for="email">Email:</label>
+                <input class="input__item input__register" type="email" name="email" id="" placeholder="Email" required>
 
-                <label class="label__input" for="password">Contraseña:</label>
-                <input class="input__item" type="password" name="password" id=""
+                <label class="label__input label__register" for="password">Contraseña:</label>
+                <input class="input__item input__register" type="password" name="password" id=""
                     placeholder="************" required>
 
-                <label class="label__input" for="password">Repita Contraseña:</label>
-                <input class="input__item" type="password" name="password" id=""
+                <label class="label__input label__register" for="password">Repita Contraseña:</label>
+                <input class="input__item input__register" type="password" name="password" id=""
                     placeholder="************" required>
 
                 <div class="register__btn">
                     <button class="btn reg-btn">Registrar</button>
-                    <div><input class="input__terminos" type="checkbox" name="terminos" id="terminos">
-                        <label class="label__terminos" for="terminos">Acepto <span>Términos y Condiciones</span></label>
+                    <div class="terminos">
+                        <input class="input__terminos" type="checkbox" name="terminos" id="terminos">
+                        <label class="label__terminos" for="terminos">Acepto <span> "Términos y Condiciones</span></label>
                     </div>
                 </div>
 
             </form>
         </section>
     </main>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="navbar container">
-            <ul>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="../pages_tienda/shop.html">Shop</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="register.html">Registrarse</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="#">Ingresar</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="#">Contacto</a>
-                </li>
-            </ul>
-            <picture>
-                <img src="../multimedia/branding/isotype.svg" alt="Logo del sitio" />
-            </picture>
-        </div>
-        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy ;</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+<!-- fin register -->
+<!-- footer -->
+<footer class="footer">
+    <div class="navbar container">
+        <ul>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../pages_tienda/shop.html">Ver Tienda</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="register.html">Registrarse</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="login.html">Ingresar</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+        <picture class="footer__logo">
+            <img src="../multimedia/branding/isotype.svg" alt="Logo del sitio" />
+        </picture>
+    </div>
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy ;</p>
+</footer>
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
 </body>
 </html>
